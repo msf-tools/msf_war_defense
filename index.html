@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MSF War Meta Squad Browser</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 16px;
+      background: #111827;
+      color: #e5e7eb;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #020617;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      border: 1px solid #1f2937;
+    }
+    label {
+      font-size: 0.9rem;
+    }
+    input[type="file"],
+    input[type="text"],
+    input[type="number"],
+    select,
+    button,
+    textarea {
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+      padding: 6px 8px;
+      border-radius: 8px;
+      border: 1px solid #374151;
+      background: #020617;
+      color: #e5e7eb;
+    }
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 1px #4f46e5;
+    }
+    button {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: none;
+      background: #4f46e5;
+      color: #e5e7eb;
+      cursor: pointer;
+      font-weight: 500;
+      margin-left: 8px;
+    }
+    button.secondary {
+      background: #111827;
+      border: 1px solid #374151;
+      color: #e5e7eb;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #374151;
+      background: #020617;
+      color: #e5e7eb;
+      padding: 8px;
+      resize: vertical;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 8px;
+    }
+    .row > * {
+      margin-right: 4px;
+    }
+    .small {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    #status {
+      font-size: 0.85rem;
+      margin-top: 6px;
+      color: #9ca3af;
+    }
+    #summary {
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+    #filters {
+      display: none;
+    }
+    #table-wrapper {
+      display: none;
+      max-height: 70vh;
+      overflow: auto;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      background: #020617;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      z-index: 1;
+    }
+    th, td {
+      padding: 6px 8px;
+      text-align: left;
+      border-bottom: 1px solid #1f2937;
+      white-space: nowrap;
+    }
+    th {
+      user-select: none;
+      cursor: pointer;
+      position: relative;
+      font-weight: 600;
+    }
+    th.sortable:hover {
+      background: #111827;
+    }
+    th .sort-indicator {
+      font-size: 0.7rem;
+      margin-left: 4px;
+      opacity: 0.8;
+    }
+    tr:nth-child(even) td {
+      background: #020617;
+    }
+    tr:nth-child(odd) td {
+      background: #020617;
+    }
+    tr:hover td {
+      background: #111827;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #111827;
+      border: 1px solid #374151;
+      font-size: 0.75rem;
+      margin-right: 4px;
+    }
+    .pill span {
+      margin-left: 4px;
+      color: #9ca3af;
+    }
+    @media (max-width: 768px) {
+      th, td {
+        padding: 4px 6px;
+      }
+      .row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      button {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>MSF War Meta Squad Browser</h1>
+
+  <div class="card">
+    <strong>1. Load your JSON</strong>
+    <div class="row">
+      <label>
+        <span class="small">Choose JSON file:</span><br />
+        <input type="file" id="file-input" accept=".json,application/json" />
+      </label>
+      <span class="small">or paste JSON below and click “Load Data”</span>
+    </div>
+    <textarea id="json-input" placeholder='Paste your JSON here (e.g. [{"squad":["Namor","IronPatriot","TheLeader","Ultimus","Knull"],"total":234,"wins":75}, ...] )'></textarea>
+    <div class="row">
+      <button id="load-btn">Load Data</button>
+      <button id="clear-btn" class="secondary">Clear</button>
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <div id="filters" class="card">
+    <strong>2. Filter & sort squads</strong>
+    <div class="row">
+      <label>
+        Characters (comma-separated)<br />
+        <input
+          type="text"
+          id="char-filter"
+          list="character-list"
+          placeholder="e.g. Namor, IronPatriot, TheLeader"
+          size="40"
+        />
+      </label>
+      <label>
+        Match mode<br />
+        <select id="match-mode">
+          <option value="all">Must contain ALL</option>
+          <option value="any">Contain ANY</option>
+        </select>
+      </label>
+      <label>
+        Exclude characters<br />
+        <input
+          type="text"
+          id="char-exclude"
+          list="character-list"
+          placeholder="e.g. Doom, SuperSkrull"
+          size="30"
+        />
+      </label>
+    </div>
+    <div class="row">
+      <label>
+        Min total attempts<br />
+        <input type="number" id="min-total" placeholder="e.g. 50" min="0" />
+      </label>
+      <label>
+        Min win %<br />
+        <input type="number" id="min-win-pct" placeholder="e.g. 50" min="0" max="100" />
+      </label>
+      <button id="clear-filters" class="secondary">Clear filters</button>
+    </div>
+    <div class="row">
+      <div id="summary"></div>
+    </div>
+    <div class="row">
+      <div id="active-filters" class="small"></div>
+    </div>
+    <datalist id="character-list"></datalist>
+  </div>
+
+  <div id="table-wrapper">
+    <table id="squad-table">
+      <thead>
+        <tr>
+          <th class="sortable" data-sort="id"># <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="total">Total <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="wins">Wins <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="winPct">Win % <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="char1">Char 1 <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="char2">Char 2 <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="char3">Char 3 <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="char4">Char 4 <span class="sort-indicator"></span></th>
+          <th class="sortable" data-sort="char5">Char 5 <span class="sort-indicator"></span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script>
+    (function () {
+      const fileInput = document.getElementById("file-input");
+      const jsonInput = document.getElementById("json-input");
+      const loadBtn = document.getElementById("load-btn");
+      const clearBtn = document.getElementById("clear-btn");
+      const statusEl = document.getElementById("status");
+      const filtersCard = document.getElementById("filters");
+      const tableWrapper = document.getElementById("table-wrapper");
+      const charFilterInput = document.getElementById("char-filter");
+      const charExcludeInput = document.getElementById("char-exclude");
+      const matchModeSelect = document.getElementById("match-mode");
+      const minTotalInput = document.getElementById("min-total");
+      const minWinPctInput = document.getElementById("min-win-pct");
+      const clearFiltersBtn = document.getElementById("clear-filters");
+      const summaryEl = document.getElementById("summary");
+      const activeFiltersEl = document.getElementById("active-filters");
+      const characterList = document.getElementById("character-list");
+      const table = document.getElementById("squad-table");
+      const tbody = table.querySelector("tbody");
+      const ths = table.querySelectorAll("th.sortable");
+
+      let tableData = [];
+      let filteredData = [];
+      let allCharacters = new Set();
+
+      let currentSort = {
+        column: "winPct",
+        direction: "desc", // 'asc' or 'desc'
+      };
+
+      function setStatus(message, isError = false) {
+        statusEl.textContent = message;
+        statusEl.style.color = isError ? "#f97373" : "#9ca3af";
+      }
+
+      function tryParseJSON(text) {
+        try {
+          return JSON.parse(text);
+        } catch (e) {
+          console.error("JSON parse error:", e);
+          return null;
+        }
+      }
+
+      function normalizeData(parsed) {
+        let arr;
+        if (Array.isArray(parsed)) {
+          arr = parsed;
+        } else if (parsed && Array.isArray(parsed.squads)) {
+          arr = parsed.squads;
+        } else if (parsed && Array.isArray(parsed.data)) {
+          arr = parsed.data;
+        } else {
+          throw new Error("JSON must be an array of objects or have a 'squads'/'data' array.");
+        }
+
+        allCharacters = new Set();
+
+        tableData = arr.map((item, idx) => {
+          const squad = Array.isArray(item.squad) ? item.squad : [];
+          const total = Number(item.total) || 0;
+          const wins = Number(item.wins) || 0;
+          const winPct = total > 0 ? (wins / total) * 100 : 0;
+
+          squad.forEach((c) => {
+            if (c && typeof c === "string") {
+              allCharacters.add(c);
+            }
+          });
+
+          return {
+            id: idx + 1,
+            squad,
+            char1: squad[0] || "",
+            char2: squad[1] || "",
+            char3: squad[2] || "",
+            char4: squad[3] || "",
+            char5: squad[4] || "",
+            total,
+            wins,
+            winPct,
+          };
+        });
+
+        // populate datalist
+        characterList.innerHTML = "";
+        const sortedChars = Array.from(allCharacters).sort((a, b) =>
+          a.localeCompare(b)
+        );
+        for (const c of sortedChars) {
+          const opt = document.createElement("option");
+          opt.value = c;
+          characterList.appendChild(opt);
+        }
+      }
+
+      function compareValues(a, b, column, direction) {
+        const dir = direction === "asc" ? 1 : -1;
+        const valA = a[column];
+        const valB = b[column];
+
+        if (typeof valA === "number" && typeof valB === "number") {
+          if (valA === valB) return 0;
+          return valA > valB ? dir : -dir;
+        }
+
+        const strA = (valA ?? "").toString().toLowerCase();
+        const strB = (valB ?? "").toString().toLowerCase();
+        if (strA === strB) return 0;
+        return strA > strB ? dir : -dir;
+      }
+
+      function renderTable() {
+        tbody.innerHTML = "";
+        for (const row of filteredData) {
+          const tr = document.createElement("tr");
+
+          const winPctDisplay = row.winPct ? row.winPct.toFixed(1) : "0.0";
+
+          const cells = [
+            row.id,
+            row.total,
+            row.wins,
+            winPctDisplay,
+            row.char1,
+            row.char2,
+            row.char3,
+            row.char4,
+            row.char5,
+          ];
+
+          for (const value of cells) {
+            const td = document.createElement("td");
+            td.textContent = value;
+            tr.appendChild(td);
+          }
+
+          tbody.appendChild(tr);
+        }
+
+        // update sort indicators
+        ths.forEach((th) => {
+          const col = th.getAttribute("data-sort");
+          const indicator = th.querySelector(".sort-indicator");
+          if (col === currentSort.column) {
+            indicator.textContent = currentSort.direction === "asc" ? "▲" : "▼";
+          } else {
+            indicator.textContent = "";
+          }
+        });
+      }
+
+      function updateSummaryAndFilters() {
+        if (!tableData.length) {
+          summaryEl.textContent = "";
+          activeFiltersEl.innerHTML = "";
+          return;
+        }
+
+        summaryEl.textContent = `Showing ${filteredData.length.toLocaleString()} of ${tableData.length.toLocaleString()} squads`;
+
+        const pills = [];
+        const charFilter = charFilterInput.value
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean);
+        const charExclude = charExcludeInput.value
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean);
+        const minTotal = minTotalInput.value ? Number(minTotalInput.value) : null;
+        const minWinPct = minWinPctInput.value ? Number(minWinPctInput.value) : null;
+        const matchMode = matchModeSelect.value;
+
+        if (charFilter.length) {
+          pills.push(
+            `<span class="pill">Include: ${charFilter.join(", ")}<span>${matchMode}</span></span>`
+          );
+        }
+        if (charExclude.length) {
+          pills.push(
+            `<span class="pill">Exclude: ${charExclude.join(", ")}</span>`
+          );
+        }
+        if (minTotal != null && !Number.isNaN(minTotal)) {
+          pills.push(`<span class="pill">Min total: ${minTotal}</span>`);
+        }
+        if (minWinPct != null && !Number.isNaN(minWinPct)) {
+          pills.push(`<span class="pill">Min win %: ${minWinPct}</span>`);
+        }
+
+        activeFiltersEl.innerHTML = pills.join(" ");
+      }
+
+      function applyFilters() {
+        if (!tableData.length) return;
+
+        const charFilter = charFilterInput.value
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
+          .map((s) => s.toLowerCase());
+        const charExclude = charExcludeInput.value
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
+          .map((s) => s.toLowerCase());
+        const matchMode = matchModeSelect.value;
+        const minTotal = minTotalInput.value ? Number(minTotalInput.value) : null;
+        const minWinPct = minWinPctInput.value ? Number(minWinPctInput.value) : null;
+
+        filteredData = tableData.filter((row) => {
+          const squadLower = row.squad.map((c) => c.toLowerCase());
+
+          // include filter
+          if (charFilter.length) {
+            if (matchMode === "all") {
+              for (const cf of charFilter) {
+                const has = squadLower.some((c) => c.includes(cf));
+                if (!has) return false;
+              }
+            } else {
+              const hasAny = charFilter.some((cf) =>
+                squadLower.some((c) => c.includes(cf))
+              );
+              if (!hasAny) return false;
+            }
+          }
+
+          // exclude filter: reject if any excluded substring is present
+          if (charExclude.length) {
+            const hasExcluded = charExclude.some((ex) =>
+              squadLower.some((c) => c.includes(ex))
+            );
+            if (hasExcluded) return false;
+          }
+
+          if (minTotal != null && !Number.isNaN(minTotal)) {
+            if (row.total < minTotal) return false;
+          }
+
+          if (minWinPct != null && !Number.isNaN(minWinPct)) {
+            if (row.winPct < minWinPct) return false;
+          }
+
+          return true;
+        });
+
+        filteredData.sort((a, b) =>
+          compareValues(a, b, currentSort.column, currentSort.direction)
+        );
+
+        updateSummaryAndFilters();
+        renderTable();
+      }
+
+      function handleSortClick(e) {
+        const th = e.currentTarget;
+        const column = th.getAttribute("data-sort");
+        if (!column) return;
+
+        if (currentSort.column === column) {
+          currentSort.direction = currentSort.direction === "asc" ? "desc" : "asc";
+        } else {
+          currentSort.column = column;
+          currentSort.direction = column === "id" ? "asc" : "desc";
+        }
+
+        applyFilters();
+      }
+
+      function clearFilters() {
+        charFilterInput.value = "";
+        charExcludeInput.value = "";
+        minTotalInput.value = "";
+        minWinPctInput.value = "";
+        matchModeSelect.value = "all";
+        applyFilters();
+      }
+
+      function handleParsedData(parsed) {
+        try {
+          normalizeData(parsed);
+        } catch (err) {
+          console.error(err);
+          setStatus(err.message || "Unexpected data format.", true);
+          return;
+        }
+
+        filteredData = [...tableData];
+
+        // default sort: winPct desc
+        currentSort = { column: "winPct", direction: "desc" };
+        applyFilters();
+
+        filtersCard.style.display = "block";
+        tableWrapper.style.display = "block";
+        setStatus(`Loaded ${tableData.length.toLocaleString()} squads.`);
+      }
+
+      function loadFromTextarea() {
+        const text = jsonInput.value.trim();
+        if (!text) {
+          setStatus("Paste JSON or choose a file first.", true);
+          return;
+        }
+        const parsed = tryParseJSON(text);
+        if (!parsed) {
+          setStatus("Invalid JSON in textarea.", true);
+          return;
+        }
+        handleParsedData(parsed);
+      }
+
+      function loadFromFile(file) {
+        if (!file) return;
+        setStatus("Reading file...");
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const text = e.target.result;
+          const parsed = tryParseJSON(text);
+          if (!parsed) {
+            setStatus("Invalid JSON in file.", true);
+            return;
+          }
+          handleParsedData(parsed);
+        };
+        reader.onerror = () => {
+          setStatus("Error reading file.", true);
+        };
+        reader.readAsText(file);
+      }
+
+
+
+      // Preload hosted JSON (e.g., GitHub Pages) so alliance members don't need to upload a file.
+      // Place your data at: ./data/msf_war_meta.json (relative to this index.html)
+      async function preloadFromFetch() {
+        const DATA_URL = './data/msf_war_meta.json';
+        try {
+          setStatus('Loading hosted data...');
+          const res = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: 'no-store' });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const parsed = await res.json();
+          handleParsedData(parsed);
+        } catch (err) {
+          // Silent fallback to manual file upload / paste.
+          console.warn('Hosted preload failed; using manual upload/paste instead.', err);
+          setStatus('Hosted data not found. Upload or paste JSON to continue.');
+        }
+      }
+
+      // Attempt preload on page load.
+      preloadFromFetch();
+      // Event listeners
+      loadBtn.addEventListener("click", () => {
+        setStatus("");
+        if (fileInput.files && fileInput.files[0]) {
+          loadFromFile(fileInput.files[0]);
+        } else {
+          loadFromTextarea();
+        }
+      });
+
+      clearBtn.addEventListener("click", () => {
+        fileInput.value = "";
+        jsonInput.value = "";
+        statusEl.textContent = "";
+        filtersCard.style.display = "none";
+        tableWrapper.style.display = "none";
+        tbody.innerHTML = "";
+        tableData = [];
+        filteredData = [];
+        allCharacters = new Set();
+      });
+
+      fileInput.addEventListener("change", () => {
+        const file = fileInput.files && fileInput.files[0];
+        if (file) {
+          setStatus(`Loading ${file.name}...`);
+          loadFromFile(file);
+        } else {
+          setStatus("");
+        }
+      });
+
+      [
+        charFilterInput,
+        charExcludeInput,
+        matchModeSelect,
+        minTotalInput,
+        minWinPctInput,
+      ].forEach((el) => {
+        el.addEventListener("input", () => {
+          if (!tableData.length) return;
+          applyFilters();
+        });
+      });
+
+      clearFiltersBtn.addEventListener("click", () => {
+        if (!tableData.length) return;
+        clearFilters();
+      });
+
+      ths.forEach((th) => {
+        th.addEventListener("click", handleSortClick);
+      });
+    })();
+  </script>
+</body>
+</html>
