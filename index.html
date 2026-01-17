@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MSF War Meta Squad Browser</title>
+  <title>MSF War Defense Browser</title>
   <style>
     * {
       box-sizing: border-box;
@@ -214,10 +214,67 @@
       background: #111827;
     }
 
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin: 8px 0 14px;
+    }
+    .info-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #0b1220;
+      border: 1px solid #1f2937;
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      line-height: 1;
+    }
+    .info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      border: 1px solid #374151;
+      background: #111827;
+      color: #e5e7eb;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: help;
+      user-select: none;
+    }
+    #empty-state {
+      display: none;
+      padding: 12px 14px;
+      border-top: 1px solid #1f2937;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+    #empty-state strong {
+      color: #e5e7eb;
+    }
+
   </style>
 </head>
 <body>
-  <h1>MSF War Meta Squad Browser</h1>
+  <h1>MSF War Defense Browser</h1>
+
+  <div class="topbar">
+    <span class="info-badge" title="Data last refreshed on January 16, 2026.">
+      <span class="info-icon" aria-label="Info">i</span>
+      Data refreshed: 1/16/26
+    </span>
+    <span class="info-badge" title="Only squads with at least 150 total battles are included in the dataset. If a search returns no rows, try broadening the characters or lowering your other filters.">
+      <span class="info-icon" aria-label="Info">i</span>
+      Dataset includes squads with ≥150 battles
+    </span>
+  </div>
 
   <div class="card" id="load-card">
     <strong>1. Load your JSON</strong>
@@ -267,8 +324,8 @@
     </div>
     <div class="row">
       <label>
-        Min total attempts<br />
-        <input type="number" id="min-total" placeholder="e.g. 50" min="0" />
+        Min total attempts <span class="info-icon" title="Note: the dataset only includes squads with at least 150 total battles.">i</span><br />
+        <input type="number" id="min-total" placeholder="150" min="0" />
       </label>
       <label>
         Min win %<br />
@@ -279,7 +336,9 @@
     <div class="row">
       <div id="summary"></div>
     </div>
+    <div class="row">
       <button id="toggle-manual" class="secondary">Load different data</button>
+    </div>
     <div class="row">
       <div id="active-filters" class="small"></div>
     </div>
@@ -287,6 +346,7 @@
   </div>
 
   <div id="table-wrapper">
+    <div id="empty-state"><strong>No squads match your filters.</strong> If you searched for characters and got zero results, remember the dataset only includes squads with <strong>≥150 total battles</strong>. Try removing exclusions, switching Match mode to ANY, or lowering Min win %.</div>
     <table id="squad-table">
       <thead>
         <tr>
@@ -326,6 +386,7 @@
       const table = document.getElementById("squad-table");
       const tbody = table.querySelector("tbody");
       const ths = table.querySelectorAll("th.sortable");
+      const emptyStateEl = document.getElementById("empty-state");
 
       // Manual load UI toggle (hidden by default when hosted preload works)
       const loadCard = document.getElementById("load-card");
@@ -733,6 +794,11 @@
           compareValues(a, b, currentSort.column, currentSort.direction)
         );
 
+
+        if (emptyStateEl) {
+          emptyStateEl.style.display = filteredData.length ? "none" : "block";
+        }
+
         updateSummaryAndFilters();
         renderTable();
       }
@@ -768,6 +834,12 @@
           console.error(err);
           setStatus(err.message || "Unexpected data format.", true);
           return;
+        }
+
+
+        // Default min total attempts to 150 (dataset floor) unless user already set it
+        if (!minTotalInput.value) {
+          minTotalInput.value = "150";
         }
 
         filteredData = [...tableData];
@@ -856,6 +928,7 @@
         filtersCard.style.display = "none";
         tableWrapper.style.display = "none";
         tbody.innerHTML = "";
+        if (emptyStateEl) emptyStateEl.style.display = "none";
         tableData = [];
         filteredData = [];
         allCharacters = new Set();
