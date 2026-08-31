@@ -1,10 +1,10 @@
 {
   "meta": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-31T04:03:16.411Z",
-    "dataChangedAt": "2026-08-31T04:03:16.411Z",
+    "generatedAt": "2026-08-31T04:07:18.286Z",
+    "dataChangedAt": "2026-08-31T04:07:18.286Z",
     "sourceDataAsOf": "2026-05-17T08:24:58.352Z",
-    "warDataAsOf": "2026-08-31T04:03:16.411Z",
+    "warDataAsOf": "2026-08-31T04:07:18.286Z",
     "characterDataAsOf": "2026-05-17T08:24:58.352Z",
     "characterOverrideCount": 10,
     "characterOverrideDataAsOf": "2026-08-31T04:02:17.000Z",
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "a46c57e393cc6f6455b36dfed65273b178e0a44a2842e0b86aa395d863aaef3d",
+    "contentHash": "865cd64ba4f3140c405b2c10ebaa2f60a2721e67f86f43913f391134be79aa74",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -37511,43 +37511,6 @@
     {
       "characters": [
         {
-          "id": "BlueMarvel",
-          "name": "Blue Marvel",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BlueMarvel_9330e29f.png",
-          "isMapped": true
-        },
-        {
-          "id": "MagnetoPhoenixForce",
-          "name": "Magneto (Phoenix Force)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagnetoPhoenixForce_a40d4ec9.png",
-          "isMapped": true
-        },
-        {
-          "id": "OmegaRedPhoenix",
-          "name": "Omega Red (Phoenix Force)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OmegaRedPhoenix_f3c258e2.png",
-          "isMapped": true
-        },
-        {
-          "id": "Phoenix",
-          "name": "Phoenix",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Phoenix_d05c646c.png",
-          "isMapped": true
-        },
-        {
-          "id": "Xavier",
-          "name": "Professor Xavier",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Xavier_5621f4f9.png",
-          "isMapped": true
-        }
-      ],
-      "totalBattles": 115,
-      "defensiveWins": 47,
-      "defendRate": 40.9
-    },
-    {
-      "characters": [
-        {
           "id": "Apocalypse",
           "name": "Apocalypse",
           "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Apocalypse_a29770e5.png",
@@ -37581,6 +37544,43 @@
       "totalBattles": 115,
       "defensiveWins": 44,
       "defendRate": 38.3
+    },
+    {
+      "characters": [
+        {
+          "id": "BlackKnight",
+          "name": "Black Knight",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BlackKnight_59cd0b2f.png",
+          "isMapped": true
+        },
+        {
+          "id": "Daken",
+          "name": "Daken",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Daken_fad050d8.png",
+          "isMapped": true
+        },
+        {
+          "id": "Deathpool",
+          "name": "Deathpool",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Deathpool_da382246.png",
+          "isMapped": true
+        },
+        {
+          "id": "OldManLogan",
+          "name": "Old Man Logan",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OldManLogan_d9559148.png",
+          "isMapped": true
+        },
+        {
+          "id": "PandaPool",
+          "name": "Pandapool",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_PandaPool_78bd2983.png",
+          "isMapped": true
+        }
+      ],
+      "totalBattles": 115,
+      "defensiveWins": 34,
+      "defendRate": 29.6
     },
     {
       "characters": [
