@@ -85,6 +85,9 @@ test('joins characters and explicitly falls back for missing metadata', () => {
   assert.deepEqual(missing, { id: 'BrandNewHero', name: 'Brand New Hero', portrait: null, isMapped: false })
   assert.equal(snapshot.meta.unmappedCharacterCount, 1)
   assert.equal(snapshot.meta.sourceDataAsOf, '2026-08-29T12:00:00.000Z')
+  assert.equal(snapshot.meta.warDataAsOf, '2026-08-29T12:00:00.000Z')
+  assert.equal(snapshot.meta.characterDataAsOf, '2026-08-29T12:00:00.000Z')
+  assert.equal(snapshot.characters.length, 110)
   assert.match(snapshot.meta.contentHash, /^[a-f0-9]{64}$/)
   assert.doesNotThrow(() => validateExistingSnapshot(snapshot))
 })
@@ -115,4 +118,17 @@ test('does not create timestamp-only changes for identical content', () => {
   })
   assert.equal(second.changed, false)
   assert.equal(second.snapshot.meta.generatedAt, first.snapshot.meta.generatedAt)
+})
+
+test('tracks War and character freshness independently', () => {
+  const { snapshot } = buildSnapshot({
+    warResponse: makeWar(),
+    charactersResponse: makeCharacters(),
+    now: new Date('2026-08-31T12:00:00Z'),
+    warDataAsOf: new Date('2026-08-31T11:45:00Z'),
+    characterDataAsOf: new Date('2026-05-17T08:24:58.352Z'),
+  })
+  assert.equal(snapshot.meta.warDataAsOf, '2026-08-31T11:45:00.000Z')
+  assert.equal(snapshot.meta.characterDataAsOf, '2026-05-17T08:24:58.352Z')
+  assert.equal(snapshot.meta.sourceDataAsOf, '2026-05-17T08:24:58.352Z')
 })

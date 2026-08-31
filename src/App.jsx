@@ -77,10 +77,10 @@ export default function App() {
           <div className="hero__copy">
             <p className="eyebrow">Alliance War intelligence</p>
             <h1>Know what holds.<br /><span>Plan what wins.</span></h1>
-            <p>Explore aggregate defensive squads with current character names, portraits, battle volume, and defend rates.</p>
+            <p>Explore aggregate defensive squads with validated character names, portraits, battle volume, and defend rates.</p>
           </div>
           <div className="snapshot-strip">
-            <div><span className="pulse" /><span><strong>Validated snapshot</strong><small>Source data as of {formatFreshness(data.meta.sourceDataAsOf || data.meta.generatedAt)}</small></span></div>
+            <div><span className="pulse" /><span><strong>Validated snapshot</strong><small>War feed checked {formatFreshness(data.meta.warDataAsOf || data.meta.sourceDataAsOf || data.meta.generatedAt)}</small><small>Character catalog as of {formatFreshness(data.meta.characterDataAsOf || data.meta.sourceDataAsOf || data.meta.generatedAt)}</small></span></div>
             <div><strong>{data.meta.squadCount.toLocaleString()}</strong><small>Squads tracked</small></div>
             <div><strong>{data.meta.characterCount.toLocaleString()}</strong><small>Characters mapped</small></div>
           </div>

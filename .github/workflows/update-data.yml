@@ -27,7 +27,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Fetch and validate snapshot
-        run: npm run refresh-data
+        shell: bash
+        run: |
+          if npm run refresh-data; then
+            echo "Refreshed War results and character metadata."
+          else
+            echo "::warning::Character API refresh failed; attempting the validated War-only fallback."
+            npm run refresh-data -- --war-only
+          fi
         env:
           MSF_CLIENT_ID: ${{ secrets.MSF_CLIENT_ID }}
           MSF_CLIENT_SECRET: ${{ secrets.MSF_CLIENT_SECRET }}
