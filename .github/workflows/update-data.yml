@@ -1,0 +1,48 @@
+name: Refresh validated War data
+
+on:
+  schedule:
+    - cron: '17 12 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: war-data-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Fetch and validate snapshot
+        run: npm run refresh-data
+        env:
+          MSF_CLIENT_ID: ${{ secrets.MSF_CLIENT_ID }}
+          MSF_CLIENT_SECRET: ${{ secrets.MSF_CLIENT_SECRET }}
+          MSF_API_KEY: ${{ secrets.MSF_API_KEY }}
+      - name: Verify application
+        run: npm test && npm run lint && npm run build
+      - name: Commit meaningful data changes
+        shell: bash
+        run: |
+          if git diff --quiet -- public/data/war-defense.json; then
+            echo "Validated upstream data; snapshot content is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/war-defense.json
+          git commit -m "Refresh validated War defense data"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
