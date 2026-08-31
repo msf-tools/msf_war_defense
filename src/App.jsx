@@ -14,6 +14,11 @@ import {
 } from './utils/filters.js'
 
 const PAGE_SIZE = 60
+const METADATA_FIELDS = [
+  ['traits', 'roster'],
+  ['invisibleTraits', 'hidden'],
+  ['eventTraits', 'event'],
+]
 
 function formatFreshness(timestamp) {
   if (!timestamp) return 'Unknown refresh date'
@@ -33,16 +38,26 @@ export default function App() {
   const tags = useMemo(() => {
     const byId = new Map()
     characters.forEach((character) => {
-      ;(character.traits || []).forEach((trait) => {
-        const existing = byId.get(trait.id)
-        byId.set(trait.id, {
-          id: trait.id,
-          name: trait.name,
-          characterCount: (existing?.characterCount || 0) + 1,
+      METADATA_FIELDS.forEach(([field, type]) => {
+        ;(character[field] || []).forEach((trait) => {
+          const existing = byId.get(trait.id) || {
+            id: trait.id,
+            name: trait.name,
+            characterIds: new Set(),
+            types: new Set(),
+          }
+          existing.characterIds.add(character.id)
+          existing.types.add(type)
+          byId.set(trait.id, existing)
         })
       })
     })
-    return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
+    return [...byId.values()].map((tag) => ({
+      id: tag.id,
+      name: tag.name,
+      characterCount: tag.characterIds.size,
+      types: [...tag.types].sort(),
+    })).sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
   }, [characters])
 
   const characterTraits = useMemo(() => buildCharacterTraitMap(characters), [characters])
@@ -137,7 +152,7 @@ export default function App() {
             <div className="empty-state">
               <span aria-hidden="true">◇</span>
               <h3>No defenses match that combination</h3>
-              <p>Try switching ALL to ANY, removing a character or tag, or lowering a threshold.</p>
+              <p>Try switching ALL to ANY, removing a character or metadata filter, or lowering a threshold.</p>
               <button type="button" className="button" onClick={resetFilters}>Reset filters</button>
             </div>
           )}

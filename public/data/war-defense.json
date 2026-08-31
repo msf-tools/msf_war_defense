@@ -1,11 +1,11 @@
 {
   "meta": {
-    "schemaVersion": 4,
-    "generatedAt": "2026-08-31T04:39:16.791Z",
-    "dataChangedAt": "2026-08-31T04:39:16.791Z",
-    "sourceDataAsOf": "2026-08-31T04:39:16.791Z",
-    "warDataAsOf": "2026-08-31T04:39:16.791Z",
-    "characterDataAsOf": "2026-08-31T04:39:16.791Z",
+    "schemaVersion": 5,
+    "generatedAt": "2026-08-31T05:06:57.672Z",
+    "dataChangedAt": "2026-08-31T05:06:57.672Z",
+    "sourceDataAsOf": "2026-08-31T05:06:57.672Z",
+    "warDataAsOf": "2026-08-31T05:06:57.672Z",
+    "characterDataAsOf": "2026-08-31T05:06:57.672Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "ac01dc17c180f860c9bf1097d2d2e605a269393c3e235280bedd1f7e5eb28b5d",
+    "contentHash": "412de61e704c8eba1fd8a10a0a31b311027edb55109bd440ee9f94ad256ca533",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -57,7 +57,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AimControl_Infect",
@@ -88,7 +90,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AimDmg_Offense",
@@ -119,7 +123,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AimOperator",
@@ -154,7 +160,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AimSupport_Heal",
@@ -185,7 +193,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AimTank_Taunt",
@@ -216,7 +226,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Abomination",
@@ -242,6 +254,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -269,6 +288,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -305,6 +331,21 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -335,6 +376,17 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -371,6 +423,13 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -406,6 +465,17 @@
           "id": "Symbiote",
           "name": "SYMBIOTE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -432,6 +502,18 @@
         {
           "id": "YoungAvenger",
           "name": "YOUNG AVENGER"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -460,6 +542,13 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
@@ -486,6 +575,26 @@
         {
           "id": "Support",
           "name": "SUPPORT"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -518,6 +627,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -545,7 +665,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AntMan",
@@ -580,6 +702,17 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -611,6 +744,17 @@
           "id": "Symbiote",
           "name": "SYMBIOTE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -641,6 +785,18 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -681,6 +837,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -704,7 +867,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_Ares_SentryBoss",
@@ -727,7 +892,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Azazel",
@@ -758,6 +925,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -785,7 +967,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Beast",
@@ -824,6 +1013,26 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        }
       ]
     },
     {
@@ -855,7 +1064,14 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Bishop",
@@ -881,6 +1097,22 @@
         {
           "id": "Mutant",
           "name": "MUTANT"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -916,6 +1148,13 @@
         {
           "id": "Legendary",
           "name": "LEGENDARY"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -956,6 +1195,22 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Defender",
+          "name": "DEFENDER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        }
       ]
     },
     {
@@ -987,7 +1242,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "BlackPanther",
@@ -1022,6 +1284,22 @@
           "id": "WarDog",
           "name": "WAR DOG"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -1053,7 +1331,14 @@
           "id": "WarDog",
           "name": "WAR DOG"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "BlackPantherShuri",
@@ -1084,7 +1369,14 @@
           "id": "Wakanda",
           "name": "WAKANDAN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "BlackWidow",
@@ -1123,6 +1415,26 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        }
       ]
     },
     {
@@ -1150,7 +1462,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_BlackWidow_SentryBoss",
@@ -1189,7 +1503,18 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Blade",
@@ -1220,6 +1545,13 @@
           "id": "Vampire",
           "name": "VAMPIRE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
@@ -1246,6 +1578,18 @@
         {
           "id": "Support",
           "name": "SUPPORT"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -1282,6 +1626,33 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -1309,6 +1680,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -1335,6 +1713,17 @@
         {
           "id": "Hero",
           "name": "HERO"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -1367,6 +1756,21 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        }
       ]
     },
     {
@@ -1394,7 +1798,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Bullseye",
@@ -1425,6 +1836,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -1452,7 +1874,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Cable",
@@ -1482,6 +1906,26 @@
         {
           "id": "Xforce",
           "name": "X-FORCE"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -1513,6 +1957,25 @@
         {
           "id": "Xmen",
           "name": "X-MEN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -1557,6 +2020,30 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestBuddies",
+          "name": "BEST BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        }
       ]
     },
     {
@@ -1600,7 +2087,18 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "SamWilson",
@@ -1631,6 +2129,22 @@
           "id": "Skill",
           "name": "SKILL"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -1658,7 +2172,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "CaptainBritain",
@@ -1693,7 +2209,9 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "CaptainCarter",
@@ -1724,7 +2242,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "CaptainMarvel",
@@ -1759,7 +2279,14 @@
           "id": "Military",
           "name": "MILITARY"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Carnage",
@@ -1793,6 +2320,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -1829,7 +2371,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VIPMaleAOperator",
@@ -1844,7 +2388,9 @@
           "id": "Operator",
           "name": "Operator"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VIPMaleBOperator",
@@ -1859,7 +2405,9 @@
           "id": "Operator",
           "name": "Operator"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VIPMaleCOperator",
@@ -1874,7 +2422,9 @@
           "id": "Operator",
           "name": "Operator"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Cloak",
@@ -1901,7 +2451,9 @@
           "id": "NewWarrior",
           "name": "NEW WARRIOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ColleenWing",
@@ -1928,7 +2480,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Colossus",
@@ -1954,6 +2513,22 @@
         {
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -1982,6 +2557,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -2009,7 +2591,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "CosmicGhostRider",
@@ -2036,7 +2620,9 @@
           "id": "OutOfTime",
           "name": "OUT OF TIME"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Cosmo",
@@ -2067,7 +2653,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Crossbones",
@@ -2098,6 +2686,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        }
       ]
     },
     {
@@ -2124,6 +2723,13 @@
         {
           "id": "Inhuman",
           "name": "INHUMAN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -2156,6 +2762,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -2183,7 +2804,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Cyclops",
@@ -2214,6 +2837,26 @@
           "id": "XTreme",
           "name": "X-TREME X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -2241,7 +2884,9 @@
           "id": "Xmen",
           "name": "X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_Cyclops_Incursion",
@@ -2268,7 +2913,22 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Aphelion",
+          "name": "Aphelion"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Dagger",
@@ -2295,7 +2955,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "DaimonHellstrom",
@@ -2321,6 +2983,29 @@
         {
           "id": "Mystic",
           "name": "MYSTIC"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -2353,6 +3038,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestBuddies",
+          "name": "BEST BUDDIES"
+        }
       ]
     },
     {
@@ -2384,7 +3076,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Daredevil",
@@ -2419,6 +3113,17 @@
           "id": "Shadowland",
           "name": "SHADOWLAND"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -2445,6 +3150,17 @@
         {
           "id": "Vigilante",
           "name": "VIGILANTE"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
         }
       ]
     },
@@ -2473,7 +3189,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "DarkPhoenix",
@@ -2508,7 +3226,14 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "PVE_SagaBoss_Xavier",
@@ -2539,7 +3264,9 @@
           "id": "Xmen",
           "name": "X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Darkhawk",
@@ -2566,7 +3293,9 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Darkstar",
@@ -2592,6 +3321,25 @@
         {
           "id": "WinterGuard",
           "name": "WINTER GUARD"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -2619,6 +3367,22 @@
         {
           "id": "Unlimited",
           "name": "UNLIMITED X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -2659,6 +3423,29 @@
           "id": "Xforce",
           "name": "X-FORCE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestBuddies",
+          "name": "BEST BUDDIES"
+        },
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -2685,6 +3472,22 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -2721,19 +3524,35 @@
           "id": "NewWarrior",
           "name": "NEW WARRIOR"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "MSFOriginal",
+          "name": "MSF ORIGINAL"
+        }
       ]
     },
     {
       "id": "DevilDinosaur",
       "name": "Devil Dinosaur",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_DevilDinosaur_d8da5bf8.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Buddy",
       "name": "Doctor Doom",
       "portrait": null,
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Doom",
@@ -2768,7 +3587,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "PvE_DDDoctorDoom",
@@ -2799,7 +3625,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "DoctorOctopus",
@@ -2838,6 +3666,22 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "KnowhereHeist",
+          "name": "KNOWHERE HEIST"
+        }
       ]
     },
     {
@@ -2873,6 +3717,22 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Defender",
+          "name": "DEFENDER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
@@ -2900,7 +3760,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_StrangeSupreme_Incursion",
@@ -2927,7 +3789,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Aphelion",
+          "name": "Aphelion"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "DoctorVoodoo",
@@ -2954,7 +3823,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Domino",
@@ -2984,6 +3855,17 @@
         {
           "id": "Xforce",
           "name": "X-FORCE"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -3016,7 +3898,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "DoomBot",
@@ -3043,7 +3927,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Dormammu",
@@ -3074,7 +3960,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Drax",
@@ -3101,7 +3994,9 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MultipleManMinion",
@@ -3136,7 +4031,9 @@
           "id": "XFactorDupe",
           "name": "XFactor Dupe"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "EbonyMaw",
@@ -3171,6 +4068,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -3202,7 +4114,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Echo",
@@ -3228,6 +4142,18 @@
         {
           "id": "YoungAvenger",
           "name": "YOUNG AVENGER"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -3255,6 +4181,25 @@
         {
           "id": "Protector",
           "name": "PROTECTOR"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "MSFOriginal",
+          "name": "MSF ORIGINAL"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -3290,6 +4235,22 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
         }
       ]
     },
@@ -3330,6 +4291,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        }
       ]
     },
     {
@@ -3369,7 +4341,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_KreeDmg_Speed",
@@ -3408,7 +4382,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ElsaBloodstone",
@@ -3443,6 +4419,29 @@
           "id": "Supernatural",
           "name": "SUPERNATURAL"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -3470,6 +4469,26 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -3493,7 +4512,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "EmmaFrostXMen",
@@ -3523,6 +4549,21 @@
         {
           "id": "Xmen",
           "name": "X-MEN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -3554,6 +4595,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -3590,6 +4646,22 @@
           "id": "UncannyAvenger",
           "name": "UNCANNY AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -3616,6 +4688,13 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
         }
       ]
     },
@@ -3644,7 +4723,9 @@
           "id": "PvEDDDoom",
           "name": "Pv EDDDoom"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Fantomex",
@@ -3670,6 +4751,22 @@
         {
           "id": "Unlimited",
           "name": "UNLIMITED X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -3698,7 +4795,14 @@
           "id": "NewWarrior",
           "name": "NEW WARRIOR"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Forge",
@@ -3724,6 +4828,22 @@
         {
           "id": "XTreme",
           "name": "X-TREME X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -3751,6 +4871,30 @@
         {
           "id": "Hero",
           "name": "HERO"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "FantasticFour",
+          "name": "FANTASTIC FOUR"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -3783,6 +4927,26 @@
           "id": "XTreme",
           "name": "X-TREME X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -3814,7 +4978,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Ghost",
@@ -3849,6 +5020,25 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        }
       ]
     },
     {
@@ -3880,7 +5070,14 @@
           "id": "Supernatural",
           "name": "SUPERNATURAL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "GhostRiderRobbie",
@@ -3907,7 +5104,18 @@
           "id": "SecretDefender",
           "name": "SECRET DEFENDER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Defender",
+          "name": "DEFENDER"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "GhostSpider",
@@ -3946,6 +5154,21 @@
           "id": "WebWarrior",
           "name": "WEB-WARRIOR"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
+        }
       ]
     },
     {
@@ -3972,6 +5195,18 @@
         {
           "id": "TimelessEternal",
           "name": "TIMELESS ETERNAL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Eternal",
+          "name": "ETERNAL"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -4000,6 +5235,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -4027,7 +5269,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Gorr",
@@ -4058,6 +5302,22 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -4085,7 +5345,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UltGreenGoblin",
@@ -4119,6 +5381,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -4163,7 +5432,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Groot",
@@ -4194,13 +5470,22 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
       "id": "Groot_Props",
       "name": "Groot Props",
       "portrait": null,
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Guardian",
@@ -4227,7 +5512,9 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Gwenom",
@@ -4262,6 +5549,17 @@
           "id": "Symbiote",
           "name": "SYMBIOTE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -4292,6 +5590,25 @@
         {
           "id": "Retcon",
           "name": "RETCON"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -4324,7 +5641,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HandDmg_Unbuff",
@@ -4355,7 +5674,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_HandDmg_Unbuff",
@@ -4394,7 +5715,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "GT_HandControl_HealBlock",
@@ -4425,7 +5748,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HandControl_HealBlock",
@@ -4456,7 +5781,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "GT_HandDmg_Bonus",
@@ -4487,7 +5814,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HandDmg_Bonus",
@@ -4518,7 +5847,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_HandDmg_Bonus",
@@ -4557,7 +5888,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HandOperator",
@@ -4592,7 +5925,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "GT_HandTank_Stealth",
@@ -4623,7 +5958,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HandTank_Stealth",
@@ -4654,7 +5991,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "GT_HandSupport_Heal",
@@ -4685,7 +6024,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HandSupport_Heal",
@@ -4716,7 +6057,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "NUEHandSupport_Heal",
@@ -4747,7 +6090,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HankPym",
@@ -4782,6 +6127,13 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -4812,6 +6164,21 @@
         {
           "id": "Xmen",
           "name": "X-MEN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -4844,6 +6211,26 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -4875,7 +6262,18 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Heimdall",
@@ -4902,7 +6300,9 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HeimdallOperator",
@@ -4933,7 +6333,9 @@
           "id": "Operator",
           "name": "Operator"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Hela",
@@ -4964,6 +6366,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -4991,6 +6404,29 @@
           "id": "Skill",
           "name": "SKILL"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -5017,6 +6453,26 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -5049,6 +6505,22 @@
           "id": "UncannyAvenger",
           "name": "UNCANNY AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -5076,6 +6548,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -5102,6 +6589,17 @@
         {
           "id": "Vigilante",
           "name": "VIGILANTE"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
         }
       ]
     },
@@ -5138,6 +6636,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -5164,6 +6677,13 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
         }
       ]
     },
@@ -5200,6 +6720,34 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -5231,7 +6779,22 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Hulkbuster",
@@ -5257,6 +6820,18 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -5285,7 +6860,18 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Aphelion",
+          "name": "Aphelion"
+        },
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "HumanTorch",
@@ -5311,6 +6897,30 @@
         {
           "id": "Hero",
           "name": "HERO"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "FantasticFour",
+          "name": "FANTASTIC FOUR"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -5343,7 +6953,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HydraDmg_AoE",
@@ -5374,7 +6986,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HydraOperator",
@@ -5409,7 +7023,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HydraDmg_Buff",
@@ -5440,7 +7056,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_HydraDmg_Buff",
@@ -5475,7 +7093,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HydraSupport_Heal",
@@ -5506,7 +7126,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_HydraSupport_Heal",
@@ -5541,7 +7163,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "HydraDmg_Single",
@@ -5572,7 +7196,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_HydraDmg_Single",
@@ -5607,7 +7233,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Hyperion",
@@ -5638,6 +7266,21 @@
           "id": "Thunderbolt",
           "name": "THUNDERBOLT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        }
       ]
     },
     {
@@ -5665,6 +7308,18 @@
           "id": "Mutant",
           "name": "MUTANT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        }
       ]
     },
     {
@@ -5691,6 +7346,22 @@
         {
           "id": "TimelessEternal",
           "name": "TIMELESS ETERNAL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Eternal",
+          "name": "ETERNAL"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -5731,7 +7402,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "InnerDemon_Demon",
@@ -5770,7 +7443,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "InnerDemon_Dragon",
@@ -5809,7 +7484,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "AnnihilusBug",
@@ -5836,7 +7513,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PvE_DDInvisibleWoman",
@@ -5867,7 +7546,9 @@
           "id": "PvEDDDoom",
           "name": "Pv EDDDoom"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "InvisibleWoman",
@@ -5902,6 +7583,34 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        },
+        {
+          "id": "KnowhereHeist",
+          "name": "KNOWHERE HEIST"
+        }
       ]
     },
     {
@@ -5928,6 +7637,34 @@
         {
           "id": "Hero",
           "name": "HERO"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "FantasticFour",
+          "name": "FANTASTIC FOUR"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -5964,6 +7701,26 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -5995,7 +7752,9 @@
           "id": "Operator",
           "name": "Operator"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "IronFistOrson",
@@ -6029,6 +7788,21 @@
         {
           "id": "Support",
           "name": "SUPPORT"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -6073,6 +7847,22 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -6116,7 +7906,18 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "IronManInfinityWar",
@@ -6146,6 +7947,17 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -6182,6 +7994,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -6208,6 +8027,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -6236,7 +8062,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_IronPatriot_SentryBoss",
@@ -6263,7 +8091,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Ironheart",
@@ -6294,6 +8124,18 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "AForce",
+          "name": "A-FORCE"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
@@ -6321,13 +8163,17 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "EclipseRabbit",
       "name": "Ixuh",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_EclipseRabbit_0ad0d6b2.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "JeanGrey",
@@ -6361,6 +8207,30 @@
         {
           "id": "Xmen",
           "name": "X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -6397,7 +8267,18 @@
           "id": "Xmen",
           "name": "X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "JeffTheLandShark",
@@ -6423,6 +8304,29 @@
         {
           "id": "Retcon",
           "name": "RETCON"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -6459,6 +8363,21 @@
           "id": "Hero",
           "name": "HERO"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -6494,6 +8413,30 @@
           "id": "Mutant",
           "name": "MUTANT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -6524,6 +8467,26 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -6560,6 +8523,18 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -6586,6 +8561,26 @@
         {
           "id": "Mystic",
           "name": "MYSTIC"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "AForce",
+          "name": "A-FORCE"
+        },
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -6614,7 +8609,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_KangTheConqueror_Incursion",
@@ -6641,7 +8638,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Aphelion",
+          "name": "Aphelion"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Karnak",
@@ -6668,7 +8672,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KateBishop",
@@ -6694,6 +8700,22 @@
         {
           "id": "YoungAvenger",
           "name": "YOUNG AVENGER"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -6730,6 +8752,18 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "MSFOriginal",
+          "name": "MSF ORIGINAL"
+        }
       ]
     },
     {
@@ -6764,6 +8798,22 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "MSFOriginal",
+          "name": "MSF ORIGINAL"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -6800,7 +8850,14 @@
           "id": "Wakanda",
           "name": "WAKANDAN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "PVE_Killmonger_Incursion",
@@ -6835,7 +8892,18 @@
           "id": "Wakanda",
           "name": "WAKANDAN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Aphelion",
+          "name": "Aphelion"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Kingo",
@@ -6861,6 +8929,18 @@
         {
           "id": "TimelessEternal",
           "name": "TIMELESS ETERNAL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Eternal",
+          "name": "ETERNAL"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -6893,6 +8973,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -6920,7 +9007,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KittyPryde",
@@ -6946,6 +9035,22 @@
         {
           "id": "Protector",
           "name": "PROTECTOR"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "KnowhereHeist",
+          "name": "KNOWHERE HEIST"
         }
       ]
     },
@@ -6978,6 +9083,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -7009,7 +9129,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Boss",
+          "name": "Boss"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Korath",
@@ -7040,7 +9167,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Korg",
@@ -7067,7 +9196,9 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KravenTheHunter",
@@ -7102,6 +9233,18 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -7133,7 +9276,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KreeControl_Assist",
@@ -7164,7 +9309,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KreeOperator",
@@ -7199,7 +9346,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KreeSupport_HoT",
@@ -7230,7 +9379,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KreeDmg_Speed",
@@ -7261,7 +9412,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "KreeTank_Counter",
@@ -7292,7 +9445,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "LadyBullseye",
@@ -7327,6 +9482,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -7358,6 +9528,13 @@
           "id": "WeaponX",
           "name": "WEAPON X"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -7384,6 +9561,17 @@
         {
           "id": "Starjammer",
           "name": "STARJAMMER"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -7412,13 +9600,38 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
       "id": "LivingTribunal",
       "name": "Living Tribunal",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeControl_Assist_c401200a.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Lizard",
@@ -7453,13 +9666,22 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
       "id": "Lockjaw",
       "name": "Lockjaw",
       "portrait": null,
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Loki",
@@ -7489,6 +9711,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -7525,7 +9754,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "LokiNPC",
@@ -7552,7 +9783,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "LokiTeen",
@@ -7583,7 +9816,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Longshot",
@@ -7610,7 +9845,9 @@
           "id": "XFactor",
           "name": "X-FACTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "LukeCage",
@@ -7641,6 +9878,18 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -7668,7 +9917,14 @@
           "id": "Wakanda",
           "name": "WAKANDAN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "MadelynePryor",
@@ -7699,6 +9955,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -7726,7 +9993,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Maestro",
@@ -7752,6 +10021,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
         }
       ]
     },
@@ -7784,7 +10060,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Boss",
+          "name": "Boss"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Magik",
@@ -7815,13 +10098,39 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
       "id": "MagikBreaker",
       "name": "Magik Breaker",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagikBreaker_438fa832.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Magneto",
@@ -7856,7 +10165,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MagnetoPhoenixForce",
@@ -7887,6 +10198,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -7913,6 +10239,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -7941,6 +10282,13 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
@@ -7968,7 +10316,14 @@
           "id": "Hero",
           "name": "HERO"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "MariaHill",
@@ -7998,6 +10353,18 @@
         {
           "id": "Support",
           "name": "SUPPORT"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -8030,6 +10397,22 @@
           "id": "Inhuman",
           "name": "INHUMAN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "AForce",
+          "name": "A-FORCE"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -8061,7 +10444,18 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "MercTank_Taunt",
@@ -8100,7 +10494,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MercSupport_Buffs",
@@ -8131,7 +10527,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MercOperator",
@@ -8166,7 +10564,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MercTank_Debuff",
@@ -8197,7 +10597,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MercDmg_Single",
@@ -8228,7 +10630,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MercDmg_General",
@@ -8263,7 +10667,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "JaneThor",
@@ -8289,6 +10695,18 @@
         {
           "id": "Mystic",
           "name": "MYSTIC"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -8321,6 +10739,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -8352,6 +10781,17 @@
           "id": "Illuminati",
           "name": "ILLUMINATI"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        }
       ]
     },
     {
@@ -8379,7 +10819,14 @@
           "id": "Hero",
           "name": "HERO"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Aphelion",
+          "name": "Aphelion"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "MrFantasticMCU",
@@ -8405,6 +10852,38 @@
         {
           "id": "Protector",
           "name": "PROTECTOR"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "FantasticFour",
+          "name": "FANTASTIC FOUR"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -8441,6 +10920,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -8468,7 +10958,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MistyKnight",
@@ -8495,7 +10987,14 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Mockingbird",
@@ -8526,13 +11025,31 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
       "id": "Mojo",
       "name": "Mojo",
       "portrait": null,
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MoonGirl",
@@ -8567,6 +11084,34 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "AForce",
+          "name": "A-FORCE"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -8597,6 +11142,13 @@
         {
           "id": "Shadowland",
           "name": "SHADOWLAND"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
         }
       ]
     },
@@ -8629,6 +11181,22 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -8656,7 +11224,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_Moonstone_SentryBoss",
@@ -8683,7 +11253,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Morbius",
@@ -8717,6 +11289,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
         }
       ]
     },
@@ -8752,6 +11331,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -8792,7 +11386,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Morph",
@@ -8818,6 +11414,26 @@
         {
           "id": "Mutant",
           "name": "MUTANT"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -8854,6 +11470,30 @@
           "id": "YoungAvenger",
           "name": "YOUNG AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        }
       ]
     },
     {
@@ -8885,6 +11525,26 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "AForce",
+          "name": "A-FORCE"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -8912,7 +11572,18 @@
           "id": "SecretDefender",
           "name": "SECRET DEFENDER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Defender",
+          "name": "DEFENDER"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "MultipleMan",
@@ -8939,7 +11610,9 @@
           "id": "XFactor",
           "name": "X-FACTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Mysterio",
@@ -8969,6 +11642,18 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -9009,13 +11694,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "MysteryMan",
       "name": "Mystery Man",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MysteryMan_1395eae4.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Mystique",
@@ -9046,7 +11735,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Nakia",
@@ -9077,7 +11768,14 @@
           "id": "WarDog",
           "name": "WAR DOG"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Namor",
@@ -9104,7 +11802,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Nebula",
@@ -9135,7 +11835,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Negasonic",
@@ -9166,6 +11868,17 @@
           "id": "Xforce",
           "name": "X-FORCE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -9193,7 +11906,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "NickFury",
@@ -9232,6 +11947,13 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -9267,7 +11989,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "NicoMinoru",
@@ -9294,7 +12018,9 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "NightNurse",
@@ -9321,7 +12047,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "NightThrasher",
@@ -9347,6 +12075,17 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -9375,6 +12114,26 @@
           "id": "XTreme",
           "name": "X-TREME X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        }
       ]
     },
     {
@@ -9401,6 +12160,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
         }
       ]
     },
@@ -9429,7 +12195,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Nobu",
@@ -9460,7 +12228,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "NobuOperator",
@@ -9491,7 +12261,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Northstar",
@@ -9518,7 +12290,9 @@
           "id": "Mutant",
           "name": "MUTANT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Nova",
@@ -9553,7 +12327,14 @@
           "id": "Legendary",
           "name": "LEGENDARY"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "NovaSamAlexander",
@@ -9583,6 +12364,30 @@
         {
           "id": "Starjammer",
           "name": "STARJAMMER"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -9614,6 +12419,22 @@
         {
           "id": "Vampire",
           "name": "VAMPIRE"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -9650,7 +12471,14 @@
           "id": "Mythic",
           "name": "MYTHIC"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Okoye",
@@ -9681,7 +12509,14 @@
           "id": "WarDog",
           "name": "WAR DOG"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "OldManLogan",
@@ -9724,7 +12559,9 @@
           "id": "Xmen",
           "name": "X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "OmegaRed",
@@ -9759,6 +12596,30 @@
           "id": "WinterGuard",
           "name": "WINTER GUARD"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        }
       ]
     },
     {
@@ -9790,6 +12651,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -9817,7 +12693,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PandaPool",
@@ -9848,7 +12726,9 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Patriot",
@@ -9874,6 +12754,17 @@
         {
           "id": "Liberty",
           "name": "LIBERTY"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
         }
       ]
     },
@@ -9901,6 +12792,17 @@
         {
           "id": "Skill",
           "name": "SKILL"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -9937,6 +12839,13 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        }
       ]
     },
     {
@@ -9972,6 +12881,13 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        }
       ]
     },
     {
@@ -9998,6 +12914,17 @@
         {
           "id": "SecretWarrior",
           "name": "SECRET WARRIOR"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -10034,13 +12961,39 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
       "id": "Vahl_Phoenix",
       "name": "Phoenix",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Vahl_Phoenix_fcdabe92.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Photon",
@@ -10071,7 +13024,18 @@
           "id": "SecretDefender",
           "name": "SECRET DEFENDER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Defender",
+          "name": "DEFENDER"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "PhylaVell",
@@ -10101,6 +13065,13 @@
         {
           "id": "Protector",
           "name": "PROTECTOR"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -10133,6 +13104,22 @@
           "id": "XFactor",
           "name": "X-FACTOR"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        }
       ]
     },
     {
@@ -10164,6 +13151,17 @@
           "id": "Xmen",
           "name": "X-MEN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -10191,7 +13189,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_ProximaMidnight_Gauntlet",
@@ -10218,7 +13218,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Psylocke",
@@ -10248,6 +13250,18 @@
         {
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -10280,7 +13294,14 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Punisher",
@@ -10311,6 +13332,17 @@
           "id": "Vigilante",
           "name": "VIGILANTE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        }
       ]
     },
     {
@@ -10334,7 +13366,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Pyro",
@@ -10361,7 +13395,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Quake",
@@ -10395,6 +13431,13 @@
         {
           "id": "SecretWarrior",
           "name": "SECRET WARRIOR"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -10431,6 +13474,42 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -10457,6 +13536,18 @@
         {
           "id": "Mystic",
           "name": "MYSTIC"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -10493,6 +13584,21 @@
           "id": "SymbioteSix",
           "name": "SYMBIOTE SIX"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -10519,6 +13625,18 @@
         {
           "id": "Skill",
           "name": "SKILL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -10551,6 +13669,30 @@
           "id": "Mutant",
           "name": "MUTANT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -10582,7 +13724,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "S_RavagerDmg_AoE",
@@ -10617,7 +13766,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "RavagerTank_Taunt",
@@ -10648,7 +13799,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "RavagerSupport_Heal",
@@ -10679,7 +13837,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "S_RavagerSupport_Heal",
@@ -10714,7 +13879,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "RedGoblin",
@@ -10749,6 +13916,26 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -10779,6 +13966,21 @@
         {
           "id": "WinterGuard",
           "name": "WINTER GUARD"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -10819,6 +14021,18 @@
           "id": "Legendary",
           "name": "LEGENDARY"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -10846,7 +14060,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "RedSkullOperator",
@@ -10877,7 +14098,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Rescue",
@@ -10907,6 +14130,13 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -10943,6 +14173,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -10978,6 +14219,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -11008,6 +14264,17 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "KnowhereHeist",
+          "name": "KNOWHERE HEIST"
         }
       ]
     },
@@ -11040,19 +14307,25 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "RocketRaccoon_BBMinn",
       "name": "Rocket Raccoon BBMinn",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RocketRaccoon_5362342a.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "RocketRaccoon_Props",
       "name": "Rocket Raccoon Props",
       "portrait": null,
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Rogue",
@@ -11091,6 +14364,26 @@
           "id": "Unlimited",
           "name": "UNLIMITED X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -11122,6 +14415,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -11148,6 +14452,18 @@
         {
           "id": "Skill",
           "name": "SKILL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -11180,7 +14496,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "War_ShieldDmg_AoE",
@@ -11211,7 +14529,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ShieldSupport_Heal",
@@ -11242,7 +14562,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "War_ShieldSupport_Heal",
@@ -11273,7 +14595,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_ShieldSupport_Stealth",
@@ -11312,7 +14636,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ShieldSupport_Stealth",
@@ -11343,7 +14669,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "War_ShieldSupport_Stealth",
@@ -11374,7 +14702,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ShieldOperator",
@@ -11409,7 +14739,9 @@
           "id": "Support",
           "name": "SUPPORT"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "S_ShieldTank_Stun",
@@ -11448,7 +14780,9 @@
           "id": "Summon",
           "name": "Summon"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ShieldTank_Stun",
@@ -11479,7 +14813,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "War_ShieldTank_Stun",
@@ -11510,7 +14846,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ShieldDmg_Defense",
@@ -11541,7 +14879,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "War_ShieldDmg_Defense",
@@ -11572,7 +14912,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Sabretooth",
@@ -11607,7 +14949,9 @@
           "id": "WeaponX",
           "name": "WEAPON X"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Sasquatch",
@@ -11634,7 +14978,9 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Satana",
@@ -11660,6 +15006,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -11691,6 +15052,17 @@
         {
           "id": "WebWarrior",
           "name": "WEB-WARRIOR"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
         }
       ]
     },
@@ -11726,6 +15098,26 @@
         {
           "id": "Supernatural",
           "name": "SUPERNATURAL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -11766,6 +15158,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -11797,7 +15196,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Scorpion",
@@ -11836,6 +15237,17 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -11871,6 +15283,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -11902,6 +15321,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -11928,6 +15354,17 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -11956,6 +15393,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -11983,7 +15427,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Sentinel_Gun",
@@ -12014,7 +15460,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Sentinel_Sword",
@@ -12045,7 +15493,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_Boss_Sentry",
@@ -12072,7 +15522,14 @@
           "id": "Mythic",
           "name": "MYTHIC"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Boss",
+          "name": "Boss"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Sentry",
@@ -12095,13 +15552,26 @@
           "id": "Hero",
           "name": "HERO"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
       "id": "Serpent",
       "name": "Serpent",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Serpent_84c87ec3.png",
-      "traits": []
+      "traits": [],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Sersi",
@@ -12127,6 +15597,22 @@
         {
           "id": "TimelessEternal",
           "name": "TIMELESS ETERNAL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Eternal",
+          "name": "ETERNAL"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -12163,6 +15649,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        }
       ]
     },
     {
@@ -12194,7 +15687,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_SagaBoss_ShadowKing",
@@ -12225,7 +15720,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "ShangChi",
@@ -12252,7 +15749,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "SharonCarter",
@@ -12278,6 +15782,18 @@
         {
           "id": "Skill",
           "name": "SKILL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -12306,7 +15822,9 @@
           "id": "XFactor",
           "name": "X-FACTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "SheHulk",
@@ -12336,6 +15854,30 @@
         {
           "id": "Retcon",
           "name": "RETCON"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -12367,6 +15909,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -12403,7 +15960,14 @@
           "id": "WarDog",
           "name": "WAR DOG"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Sif",
@@ -12430,7 +15994,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "SilverSable",
@@ -12465,6 +16031,21 @@
           "id": "Vigilante",
           "name": "VIGILANTE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        }
       ]
     },
     {
@@ -12492,7 +16073,14 @@
           "id": "WeaponX",
           "name": "WEAPON X"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "SilverSurfer",
@@ -12519,7 +16107,9 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "SilverSurferBreaker",
@@ -12550,6 +16140,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -12576,6 +16181,21 @@
         {
           "id": "Thunderbolt",
           "name": "THUNDERBOLT"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
         }
       ]
     },
@@ -12604,6 +16224,17 @@
           "id": "Hero",
           "name": "HERO"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -12627,7 +16258,9 @@
           "id": "Hero",
           "name": "HERO"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "SpiderMan",
@@ -12661,6 +16294,30 @@
         {
           "id": "WebWarrior",
           "name": "WEB-WARRIOR"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestBuddies",
+          "name": "BEST BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
         }
       ]
     },
@@ -12696,6 +16353,22 @@
         {
           "id": "Tech",
           "name": "TECH"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
         }
       ]
     },
@@ -12736,6 +16409,38 @@
           "id": "YoungAvenger",
           "name": "YOUNG AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
+        }
       ]
     },
     {
@@ -12775,6 +16480,17 @@
           "id": "TangledWeb",
           "name": "TANGLED WEB"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
+        }
       ]
     },
     {
@@ -12810,6 +16526,13 @@
           "id": "SpiderVerse",
           "name": "SPIDER-VERSE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        }
       ]
     },
     {
@@ -12840,6 +16563,17 @@
         {
           "id": "Symbiote",
           "name": "SYMBIOTE"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -12872,6 +16606,17 @@
           "id": "TangledWeb",
           "name": "TANGLED WEB"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
+        }
       ]
     },
     {
@@ -12902,6 +16647,17 @@
         {
           "id": "WebWarrior",
           "name": "WEB-WARRIOR"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
         }
       ]
     },
@@ -12938,6 +16694,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -12968,6 +16731,26 @@
         {
           "id": "TangledWeb",
           "name": "TANGLED WEB"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "MSFOriginal",
+          "name": "MSF ORIGINAL"
+        },
+        {
+          "id": "WebSlinger",
+          "name": "WEB-SLINGER"
         }
       ]
     },
@@ -13000,6 +16783,13 @@
           "id": "SpiderVerse",
           "name": "SPIDER-VERSE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        }
       ]
     },
     {
@@ -13031,6 +16821,18 @@
           "id": "SpiderVerse",
           "name": "SPIDER-VERSE"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        }
       ]
     },
     {
@@ -13061,6 +16863,34 @@
         {
           "id": "YoungAvenger",
           "name": "YOUNG AVENGER"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
         }
       ]
     },
@@ -13097,6 +16927,25 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "KnowhereHeist",
+          "name": "KNOWHERE HEIST"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        }
       ]
     },
     {
@@ -13128,7 +16977,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "TChalla",
@@ -13155,7 +17006,9 @@
           "id": "Tech",
           "name": "TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "StarBrand",
@@ -13182,7 +17035,9 @@
           "id": "OutOfTime",
           "name": "OUT OF TIME"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Stature",
@@ -13209,7 +17064,14 @@
           "id": "PymTech",
           "name": "PYM TECH"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "SteelSerpent",
@@ -13235,6 +17097,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -13271,6 +17148,34 @@
           "id": "Uncanny",
           "name": "UNCANNY X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -13297,6 +17202,30 @@
         {
           "id": "Mutant",
           "name": "MUTANT"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -13329,6 +17258,34 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -13356,7 +17313,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Sunfire",
@@ -13386,6 +17350,18 @@
         {
           "id": "Unlimited",
           "name": "UNLIMITED X-MEN"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
         }
       ]
     },
@@ -13418,6 +17394,30 @@
           "id": "XTreme",
           "name": "X-TREME X-MEN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -13449,7 +17449,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "SuperiorSpiderMan",
@@ -13488,6 +17495,21 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -13523,7 +17545,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "SwordMaster",
@@ -13553,6 +17582,25 @@
         {
           "id": "Mystic",
           "name": "MYSTIC"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -13588,6 +17636,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -13628,6 +17691,25 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        }
       ]
     },
     {
@@ -13651,7 +17733,9 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "TestMan",
@@ -13666,7 +17750,9 @@
           "id": "Trait",
           "name": "Trait"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_Thanos_Gauntlet",
@@ -13689,7 +17775,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Thanos",
@@ -13720,6 +17808,30 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Thanos_BlackOrder",
+          "name": "Thanos Black Order"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -13747,6 +17859,18 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -13773,6 +17897,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -13805,7 +17944,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Thing",
@@ -13836,6 +17982,38 @@
           "id": "NewAvenger",
           "name": "NEW AVENGER"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "FantasticFour",
+          "name": "FANTASTIC FOUR"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -13862,6 +18040,18 @@
         {
           "id": "TimelessEternal",
           "name": "TIMELESS ETERNAL"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Eternal",
+          "name": "ETERNAL"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -13890,7 +18080,9 @@
           "id": "PvEDDDoom",
           "name": "Pv EDDDoom"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PVE_Thor_SentryBoss",
@@ -13921,7 +18113,22 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "Thor",
@@ -13951,6 +18158,30 @@
         {
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
         }
       ]
     },
@@ -13983,7 +18214,18 @@
           "id": "Wave1Avenger",
           "name": "WAVE I - AVENGER"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        },
+        {
+          "id": "Wave1",
+          "name": "Wave1"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "ThorOperator",
@@ -14018,7 +18260,9 @@
           "id": "Operator",
           "name": "Operator"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Thor_InfinityWar",
@@ -14052,6 +18296,13 @@
         {
           "id": "Mystic",
           "name": "MYSTIC"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -14088,6 +18339,38 @@
           "id": "Support",
           "name": "SUPPORT"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "ChaosTeam",
+          "name": "CHAOS TEAM"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        },
+        {
+          "id": "SPB_05_Omega",
+          "name": "TERROR"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -14114,6 +18397,18 @@
         {
           "id": "Protector",
           "name": "PROTECTOR"
+        }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
         }
       ]
     },
@@ -14142,7 +18437,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Toad",
@@ -14169,7 +18466,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "PvE_DDHumanTorch",
@@ -14196,7 +18495,9 @@
           "id": "PvEDDDoom",
           "name": "Pv EDDDoom"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Toxin",
@@ -14231,6 +18532,26 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -14262,7 +18583,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "USAgent",
@@ -14289,7 +18612,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Ultimus",
@@ -14328,7 +18653,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Ultron",
@@ -14363,6 +18690,18 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Ultron",
+          "name": "Ultron"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        }
       ]
     },
     {
@@ -14394,7 +18733,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UltronDmg_Speed",
@@ -14433,7 +18774,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UltronSupport_Heal",
@@ -14472,7 +18815,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UltronDmg_Defense",
@@ -14507,7 +18852,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UltronDmg_Offense",
@@ -14546,7 +18893,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UltronTank_Taunt",
@@ -14581,7 +18930,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UlyssesKlaue",
@@ -14607,6 +18958,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -14647,7 +19005,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "UnionJack",
@@ -14674,7 +19034,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "UrsaMajor",
@@ -14700,6 +19067,21 @@
         {
           "id": "WinterGuard",
           "name": "WINTER GUARD"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -14732,6 +19114,18 @@
           "id": "Mystic",
           "name": "MYSTIC"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Exposed",
+          "name": "EXPOSED"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "MSFOriginal",
+          "name": "MSF ORIGINAL"
+        }
       ]
     },
     {
@@ -14759,7 +19153,14 @@
           "id": "Skill",
           "name": "SKILL"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     },
     {
       "id": "VampireProtector",
@@ -14790,7 +19191,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VampireBlaster",
@@ -14821,7 +19224,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VampireBrawler",
@@ -14852,7 +19257,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VampireSupport",
@@ -14883,7 +19290,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "VampireController",
@@ -14914,7 +19323,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "Venom",
@@ -14953,6 +19364,25 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -14988,6 +19418,21 @@
           "id": "Thunderbolt",
           "name": "THUNDERBOLT"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Harbingers",
+          "name": "CHAPTER 1 - HARBINGER"
+        },
+        {
+          "id": "KnullChallengers",
+          "name": "KNULL CHALLENGERS"
+        }
       ]
     },
     {
@@ -15019,6 +19464,26 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -15046,6 +19511,18 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Avenger",
+          "name": "AVENGER"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -15069,7 +19546,9 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "SymbioteSilverSurfer",
@@ -15104,6 +19583,17 @@
           "id": "Symbiote",
           "name": "SYMBIOTE"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestSpiderBuddies",
+          "name": "BEST SPIDER BUDDIES"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        }
       ]
     },
     {
@@ -15134,6 +19624,21 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestVillainBuddies",
+          "name": "BEST VILLAIN BUDDIES"
+        },
+        {
+          "id": "Conqueror",
+          "name": "CHAPTER 2 - CONQUEROR"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
         }
       ]
     },
@@ -15174,6 +19679,17 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "BestAvengerBuddies",
+          "name": "BEST AVENGER BUDDIES"
+        }
       ]
     },
     {
@@ -15204,6 +19720,25 @@
         {
           "id": "Xmen",
           "name": "X-MEN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -15236,6 +19771,26 @@
           "id": "Tech",
           "name": "TECH"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "AForce",
+          "name": "A-FORCE"
+        },
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Alpha",
+          "name": "ANXIETY"
+        },
+        {
+          "id": "Couples",
+          "name": "COUPLES"
+        }
       ]
     },
     {
@@ -15262,6 +19817,13 @@
         {
           "id": "Villain",
           "name": "VILLAIN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -15290,7 +19852,9 @@
           "id": "Shadowland",
           "name": "SHADOWLAND"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "WinterSoldier",
@@ -15325,6 +19889,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Golden_Age",
+          "name": "GOLDEN AGE"
+        }
       ]
     },
     {
@@ -15355,6 +19926,25 @@
         {
           "id": "Xmen",
           "name": "X-MEN"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        },
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
         }
       ]
     },
@@ -15395,6 +19985,30 @@
           "id": "WeaponX",
           "name": "WEAPON X"
         }
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Xmen",
+          "name": "X-MEN"
+        }
+      ],
+      "eventTraits": [
+        {
+          "id": "BestBuddies",
+          "name": "BEST BUDDIES"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        },
+        {
+          "id": "SentryChallengers",
+          "name": "SENTRY CHALLENGERS"
+        },
+        {
+          "id": "TowerChallenger",
+          "name": "TOWER CHALLENGER I"
+        }
       ]
     },
     {
@@ -15422,7 +20036,9 @@
           "id": "Protector",
           "name": "PROTECTOR"
         }
-      ]
+      ],
+      "invisibleTraits": [],
+      "eventTraits": []
     },
     {
       "id": "X23",
@@ -15457,6 +20073,13 @@
           "id": "Xmen",
           "name": "X-MEN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "BestMutantBuddies",
+          "name": "BEST MUTANT BUDDIES"
+        }
       ]
     },
     {
@@ -15487,6 +20110,21 @@
         {
           "id": "WinterGuard",
           "name": "WINTER GUARD"
+        }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "Stormbound",
+          "name": "CHAPTER 3 - STORMBOUND"
+        },
+        {
+          "id": "AnnihilationWave",
+          "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
         }
       ]
     },
@@ -15523,6 +20161,13 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Gamma",
+          "name": "FEAR"
+        }
       ]
     },
     {
@@ -15558,6 +20203,13 @@
           "id": "SecretWarrior",
           "name": "SECRET WARRIOR"
         }
+      ],
+      "invisibleTraits": [],
+      "eventTraits": [
+        {
+          "id": "SPB_05_Beta",
+          "name": "PANIC"
+        }
       ]
     },
     {
@@ -15585,7 +20237,14 @@
           "id": "Villain",
           "name": "VILLAIN"
         }
-      ]
+      ],
+      "invisibleTraits": [
+        {
+          "id": "Chargeable",
+          "name": "Chargeable"
+        }
+      ],
+      "eventTraits": []
     }
   ],
   "teams": [

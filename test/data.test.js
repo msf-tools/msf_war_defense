@@ -67,7 +67,14 @@ test('deduplicates reordered squads deterministically by strongest sample', () =
 
 test('normalizes character portraits and searchable traits while ignoring unusable rows', () => {
   assert.deepEqual(normalizeCharacters({ data: [
-    { id: 'AlphaWolf', name: '', portrait: 'http://unsafe.example/a.png', traits: ['Tech', { id: 'ShadowConclave', name: 'SHADOW CONCLAVE' }, { id: 'Tech', name: 'TECH' }] },
+    {
+      id: 'AlphaWolf',
+      name: '',
+      portrait: 'http://unsafe.example/a.png',
+      traits: ['Tech', { id: 'ShadowConclave', name: 'SHADOW CONCLAVE' }, { id: 'Tech', name: 'TECH' }],
+      invisibleTraits: [{ id: 'InternalAlpha', name: 'INTERNAL ALPHA' }],
+      eventTraits: [{ id: 'SPB_05_Omega', name: 'TERROR' }],
+    },
     { id: '', name: 'Nobody' },
     { id: 'Beta', name: 'Beta', portrait: 'https://assets.example/b.png', traits: [{ id: 'Bio', name: 'BIO' }] },
   ] }), [
@@ -79,8 +86,17 @@ test('normalizes character portraits and searchable traits while ignoring unusab
         { id: 'ShadowConclave', name: 'SHADOW CONCLAVE' },
         { id: 'Tech', name: 'TECH' },
       ],
+      invisibleTraits: [{ id: 'InternalAlpha', name: 'INTERNAL ALPHA' }],
+      eventTraits: [{ id: 'SPB_05_Omega', name: 'TERROR' }],
     },
-    { id: 'Beta', name: 'Beta', portrait: 'https://assets.example/b.png', traits: [{ id: 'Bio', name: 'BIO' }] },
+    {
+      id: 'Beta',
+      name: 'Beta',
+      portrait: 'https://assets.example/b.png',
+      traits: [{ id: 'Bio', name: 'BIO' }],
+      invisibleTraits: [],
+      eventTraits: [],
+    },
   ])
 })
 

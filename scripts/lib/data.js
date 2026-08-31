@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 
-export const SCHEMA_VERSION = 4
+export const SCHEMA_VERSION = 5
 export const CHARACTER_SOURCE = 'https://api.marvelstrikeforce.com/game/v1/characters'
 export const WAR_SOURCE = 'https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense'
 export const CHARACTER_BOOTSTRAP_SOURCE = 'https://marvelstrikeforce.com/en/characters'
@@ -82,15 +82,9 @@ export function normalizeWarResponse(payload) {
   return { records, duplicateCount }
 }
 
-export function normalizeCharacters(payload) {
-  const rows = asArray(payload, 'Character')
-  const byId = new Map()
-
-  rows.forEach((row) => {
-    if (!row || typeof row.id !== 'string' || !row.id.trim()) return
-    const id = row.id.trim()
-    const traits = Array.isArray(row.traits)
-      ? [...new Map(row.traits.map((trait) => {
+function normalizeTraits(traits) {
+  return Array.isArray(traits)
+    ? [...new Map(traits.map((trait) => {
         if (typeof trait === 'string' && trait.trim()) {
           const traitId = trait.trim()
           return [traitId, { id: traitId, name: prettifyCharacterId(traitId) }]
@@ -102,12 +96,23 @@ export function normalizeCharacters(payload) {
           : prettifyCharacterId(traitId)
         return [traitId, { id: traitId, name }]
       }).filter(Boolean)).values()].sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
-      : []
+    : []
+}
+
+export function normalizeCharacters(payload) {
+  const rows = asArray(payload, 'Character')
+  const byId = new Map()
+
+  rows.forEach((row) => {
+    if (!row || typeof row.id !== 'string' || !row.id.trim()) return
+    const id = row.id.trim()
     const normalized = {
       id,
       name: typeof row.name === 'string' && row.name.trim() ? row.name.trim() : prettifyCharacterId(id),
       portrait: typeof row.portrait === 'string' && /^https:\/\//.test(row.portrait) ? row.portrait : null,
-      traits,
+      traits: normalizeTraits(row.traits),
+      invisibleTraits: normalizeTraits(row.invisibleTraits),
+      eventTraits: normalizeTraits(row.eventTraits),
     }
     const existing = byId.get(id)
     if (!existing || (!existing.portrait && normalized.portrait)) byId.set(id, normalized)
@@ -150,13 +155,15 @@ export function validateSnapshot(snapshot, previousSnapshot = null) {
     throw new Error('Snapshot character catalog does not match its character count')
   }
   characters.forEach((character, index) => {
-    if (!Array.isArray(character.traits)) {
-      throw new Error(`Snapshot character ${index + 1} must contain a traits array`)
-    }
-    character.traits.forEach((trait) => {
-      if (!trait || typeof trait.id !== 'string' || !trait.id || typeof trait.name !== 'string' || !trait.name) {
-        throw new Error(`Snapshot character ${index + 1} contains an invalid trait`)
+    ;['traits', 'invisibleTraits', 'eventTraits'].forEach((field) => {
+      if (!Array.isArray(character[field])) {
+        throw new Error(`Snapshot character ${index + 1} must contain a ${field} array`)
       }
+      character[field].forEach((trait) => {
+        if (!trait || typeof trait.id !== 'string' || !trait.id || typeof trait.name !== 'string' || !trait.name) {
+          throw new Error(`Snapshot character ${index + 1} contains invalid ${field} metadata`)
+        }
+      })
     })
   })
   assertNonNegativeInteger(meta.characterOverrideCount ?? 0, 'Character override count')

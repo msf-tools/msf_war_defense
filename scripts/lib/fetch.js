@@ -67,6 +67,7 @@ export async function fetchAllCharacters() {
       statsFormat: 'none',
       itemFormat: 'none',
       traitFormat: 'object',
+      charInfo: 'full',
       abilityKits: 'none',
       page: String(page),
       perPage: String(perPage),

@@ -40,6 +40,8 @@ function mergeCharacterResponses(basePayload, overridePayload) {
         ...existing,
         ...row,
         traits: row.traits ?? existing?.traits,
+        invisibleTraits: row.invisibleTraits ?? existing?.invisibleTraits,
+        eventTraits: row.eventTraits ?? existing?.eventTraits,
       })
     }
   }

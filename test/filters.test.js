@@ -33,7 +33,7 @@ const teams = [
 const characterTraits = buildCharacterTraitMap([
   { id: 'Alpha', traits: [{ id: 'Tech' }, { id: 'ShadowConclave' }] },
   { id: 'Beta', traits: [{ id: 'Bio' }] },
-  { id: 'Gamma', traits: [{ id: 'Symbiote' }] },
+  { id: 'Gamma', traits: [{ id: 'Symbiote' }], eventTraits: [{ id: 'Terror' }] },
   { id: 'Solo', traits: [{ id: 'Tech' }] },
 ])
 
@@ -69,6 +69,21 @@ test('an excluded tag removes any squad containing a matching character', () => 
     excludeTagIds: ['Tech'],
   }, characterTraits)
   assert.deepEqual(result, [])
+})
+
+test('event metadata participates in the same include and exclude semantics', () => {
+  const included = filterTeams(teams, {
+    ...DEFAULT_FILTERS,
+    minBattles: 0,
+    includeTagIds: ['Terror'],
+  }, characterTraits)
+  const excluded = filterTeams(teams, {
+    ...DEFAULT_FILTERS,
+    minBattles: 0,
+    excludeTagIds: ['Terror'],
+  }, characterTraits)
+  assert.deepEqual(included, [teams[1]])
+  assert.deepEqual(excluded, [teams[0], teams[2]])
 })
 
 test('exclusions and both thresholds combine', () => {
