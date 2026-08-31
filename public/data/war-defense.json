@@ -1,17 +1,19 @@
 {
   "meta": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-31T03:47:54.946Z",
-    "dataChangedAt": "2026-08-31T03:47:54.946Z",
+    "generatedAt": "2026-08-31T04:03:16.411Z",
+    "dataChangedAt": "2026-08-31T04:03:16.411Z",
     "sourceDataAsOf": "2026-05-17T08:24:58.352Z",
-    "warDataAsOf": "2026-08-31T03:43:27.000Z",
+    "warDataAsOf": "2026-08-31T04:03:16.411Z",
     "characterDataAsOf": "2026-05-17T08:24:58.352Z",
+    "characterOverrideCount": 10,
+    "characterOverrideDataAsOf": "2026-08-31T04:02:17.000Z",
     "squadCount": 1000,
-    "characterCount": 462,
-    "unmappedCharacterCount": 10,
+    "characterCount": 472,
+    "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
-    "portraitCoverage": 0.9791,
-    "contentHash": "999d96c9c9bf68bcff4714796ac61b76ee2c27068d959d7b0159aa61604ea1e5",
+    "portraitCoverage": 1,
+    "contentHash": "a46c57e393cc6f6455b36dfed65273b178e0a44a2842e0b86aa395d863aaef3d",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -22,6 +24,12 @@
         "id": "official-site-war-defense-service",
         "url": "https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense",
         "documented": false
+      },
+      "characterBootstrap": {
+        "id": "official-msf-character-directory",
+        "url": "https://marvelstrikeforce.com/en/characters",
+        "documented": false,
+        "recordCount": 10
       }
     }
   },
@@ -200,6 +208,11 @@
       "id": "Blade",
       "name": "Blade",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Blade_cea98c1c.png"
+    },
+    {
+      "id": "BladeMighty",
+      "name": "Blade (Mighty)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BladeMighty_a93a93c7.png"
     },
     {
       "id": "Blastaar",
@@ -610,6 +623,11 @@
       "id": "GhostSpider",
       "name": "Ghost-Spider",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_GhostSpider_f7a4fac2.png"
+    },
+    {
+      "id": "Gilgamesh",
+      "name": "Gilgamesh",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png"
     },
     {
       "id": "Gladiator",
@@ -1035,6 +1053,11 @@
       "id": "PVE_Killmonger_Incursion",
       "name": "Killmonger (Aphelion)",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Killmonger_fa09de4d.png"
+    },
+    {
+      "id": "Kingo",
+      "name": "Kingo",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png"
     },
     {
       "id": "Kingpin",
@@ -1597,6 +1620,16 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Quicksilver_dc53a7c7.png"
     },
     {
+      "id": "SymbioteQuicksilver",
+      "name": "Quicksilver (Symbiote)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png"
+    },
+    {
+      "id": "RachelColeAlves",
+      "name": "Rachel Cole-Alves",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RachelColeAlves_2b505892.png"
+    },
+    {
       "id": "RachelSummers",
       "name": "Rachel Summers",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RachelSummers_593f2e8d.png"
@@ -1655,6 +1688,11 @@
       "id": "Rhino",
       "name": "Rhino",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Rhino_78623e2d.png"
+    },
+    {
+      "id": "Riot",
+      "name": "Riot",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png"
     },
     {
       "id": "RocketRaccoon",
@@ -1775,6 +1813,11 @@
       "id": "Scorpion",
       "name": "Scorpion",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Scorpion_5848a3e7.png"
+    },
+    {
+      "id": "ScorpionBreaker",
+      "name": "Scorpion (Breaker)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ScorpionBreaker_c48eccdb.png"
     },
     {
       "id": "Scream",
@@ -1957,6 +2000,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderWoman_de4bc05a.png"
     },
     {
+      "id": "SpiderWomanJulia",
+      "name": "Spider-Woman (Julia)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderWomanJulia_d937fcea.png"
+    },
+    {
       "id": "SquirrelGirl",
       "name": "Squirrel Girl",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SquirrelGirl_4780e885.png"
@@ -2092,6 +2140,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thing_d513b000.png"
     },
     {
+      "id": "Thena",
+      "name": "Thena",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thena_d4d37608.png"
+    },
+    {
       "id": "PvE_DDThing",
       "name": "Thing-Bot",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thing_d513b000.png"
@@ -2140,6 +2193,11 @@
       "id": "PvE_DDHumanTorch",
       "name": "Torch-Bot",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_HumanTorch_c034d13c.png"
+    },
+    {
+      "id": "Toxin",
+      "name": "Toxin",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png"
     },
     {
       "id": "PVE_USAgent_SentryBoss",
@@ -3046,20 +3104,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -3736,9 +3794,9 @@
       "characters": [
         {
           "id": "BladeMighty",
-          "name": "Blade Mighty",
-          "portrait": null,
-          "isMapped": false
+          "name": "Blade (Mighty)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BladeMighty_a93a93c7.png",
+          "isMapped": true
         },
         {
           "id": "Hulk",
@@ -3748,9 +3806,9 @@
         },
         {
           "id": "RachelColeAlves",
-          "name": "Rachel Cole Alves",
-          "portrait": null,
-          "isMapped": false
+          "name": "Rachel Cole-Alves",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RachelColeAlves_2b505892.png",
+          "isMapped": true
         },
         {
           "id": "SpiderMan",
@@ -3760,9 +3818,9 @@
         },
         {
           "id": "SpiderWomanJulia",
-          "name": "Spider Woman Julia",
-          "portrait": null,
-          "isMapped": false
+          "name": "Spider-Woman (Julia)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderWomanJulia_d937fcea.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 15092,
@@ -4884,8 +4942,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -4896,8 +4954,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -4908,8 +4966,8 @@
         {
           "id": "Thena",
           "name": "Thena",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thena_d4d37608.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 4408,
@@ -5166,9 +5224,9 @@
         },
         {
           "id": "ScorpionBreaker",
-          "name": "Scorpion Breaker",
-          "portrait": null,
-          "isMapped": false
+          "name": "Scorpion (Breaker)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ScorpionBreaker_c48eccdb.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 3592,
@@ -5630,14 +5688,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -5846,8 +5904,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Hyperion",
@@ -5864,8 +5922,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -7431,20 +7489,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         },
         {
           "id": "Xavier",
@@ -8566,8 +8624,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -8578,8 +8636,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -9590,20 +9648,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -12509,8 +12567,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -12521,8 +12579,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Mephisto",
@@ -12706,14 +12764,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -13404,8 +13462,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -13416,8 +13474,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Odin",
@@ -14200,8 +14258,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -14212,8 +14270,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sentry",
@@ -15273,14 +15331,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -15563,20 +15621,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 311,
@@ -15884,20 +15942,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 302,
@@ -15995,20 +16053,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 300,
@@ -17439,14 +17497,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -18328,14 +18386,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -18631,20 +18689,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -18674,8 +18732,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -18908,8 +18966,8 @@
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 249,
@@ -19402,8 +19460,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sentry",
@@ -20520,8 +20578,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -21200,8 +21258,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -21212,8 +21270,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -22342,8 +22400,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -22354,8 +22412,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -22669,8 +22727,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -22681,8 +22739,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -23552,8 +23610,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -23564,8 +23622,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Maestro",
@@ -23960,14 +24018,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -24688,9 +24746,9 @@
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -25436,15 +25494,15 @@
         },
         {
           "id": "BladeMighty",
-          "name": "Blade Mighty",
-          "portrait": null,
-          "isMapped": false
+          "name": "Blade (Mighty)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BladeMighty_a93a93c7.png",
+          "isMapped": true
         },
         {
           "id": "RachelColeAlves",
-          "name": "Rachel Cole Alves",
-          "portrait": null,
-          "isMapped": false
+          "name": "Rachel Cole-Alves",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RachelColeAlves_2b505892.png",
+          "isMapped": true
         },
         {
           "id": "SpiderMan",
@@ -25454,9 +25512,9 @@
         },
         {
           "id": "SpiderWomanJulia",
-          "name": "Spider Woman Julia",
-          "portrait": null,
-          "isMapped": false
+          "name": "Spider-Woman (Julia)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderWomanJulia_d937fcea.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 177,
@@ -26036,8 +26094,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Odin",
@@ -26629,8 +26687,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Mephisto",
@@ -27221,8 +27279,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -27233,8 +27291,8 @@
         {
           "id": "Thena",
           "name": "Thena",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thena_d4d37608.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 165,
@@ -27746,8 +27804,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -27758,8 +27816,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -27870,14 +27928,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteSilverSurfer",
@@ -28030,8 +28088,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -28253,20 +28311,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 158,
@@ -31045,20 +31103,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 141,
@@ -31434,9 +31492,9 @@
         },
         {
           "id": "ScorpionBreaker",
-          "name": "Scorpion Breaker",
-          "portrait": null,
-          "isMapped": false
+          "name": "Scorpion (Breaker)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ScorpionBreaker_c48eccdb.png",
+          "isMapped": true
         },
         {
           "id": "SuperiorSpiderMan",
@@ -32896,14 +32954,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteSilverSurfer",
@@ -32914,8 +32972,8 @@
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -33081,14 +33139,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -33427,8 +33485,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -33854,8 +33912,8 @@
         {
           "id": "Gilgamesh",
           "name": "Gilgamesh",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png",
+          "isMapped": true
         },
         {
           "id": "Ikaris",
@@ -33866,8 +33924,8 @@
         {
           "id": "Kingo",
           "name": "Kingo",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png",
+          "isMapped": true
         },
         {
           "id": "Sersi",
@@ -34398,14 +34456,14 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -34435,20 +34493,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         }
       ],
       "totalBattles": 128,
@@ -34848,8 +34906,8 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "Sylvie",
@@ -35756,20 +35814,20 @@
         {
           "id": "Riot",
           "name": "Riot",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png",
+          "isMapped": true
         },
         {
           "id": "SymbioteQuicksilver",
-          "name": "Symbiote Quicksilver",
-          "portrait": null,
-          "isMapped": false
+          "name": "Quicksilver (Symbiote)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png",
+          "isMapped": true
         },
         {
           "id": "Toxin",
           "name": "Toxin",
-          "portrait": null,
-          "isMapped": false
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png",
+          "isMapped": true
         },
         {
           "id": "Venom",
@@ -37453,6 +37511,43 @@
     {
       "characters": [
         {
+          "id": "BlueMarvel",
+          "name": "Blue Marvel",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BlueMarvel_9330e29f.png",
+          "isMapped": true
+        },
+        {
+          "id": "MagnetoPhoenixForce",
+          "name": "Magneto (Phoenix Force)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagnetoPhoenixForce_a40d4ec9.png",
+          "isMapped": true
+        },
+        {
+          "id": "OmegaRedPhoenix",
+          "name": "Omega Red (Phoenix Force)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OmegaRedPhoenix_f3c258e2.png",
+          "isMapped": true
+        },
+        {
+          "id": "Phoenix",
+          "name": "Phoenix",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Phoenix_d05c646c.png",
+          "isMapped": true
+        },
+        {
+          "id": "Xavier",
+          "name": "Professor Xavier",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Xavier_5621f4f9.png",
+          "isMapped": true
+        }
+      ],
+      "totalBattles": 115,
+      "defensiveWins": 47,
+      "defendRate": 40.9
+    },
+    {
+      "characters": [
+        {
           "id": "Apocalypse",
           "name": "Apocalypse",
           "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Apocalypse_a29770e5.png",
@@ -37486,43 +37581,6 @@
       "totalBattles": 115,
       "defensiveWins": 44,
       "defendRate": 38.3
-    },
-    {
-      "characters": [
-        {
-          "id": "BlackKnight",
-          "name": "Black Knight",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BlackKnight_59cd0b2f.png",
-          "isMapped": true
-        },
-        {
-          "id": "Daken",
-          "name": "Daken",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Daken_fad050d8.png",
-          "isMapped": true
-        },
-        {
-          "id": "Deathpool",
-          "name": "Deathpool",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Deathpool_da382246.png",
-          "isMapped": true
-        },
-        {
-          "id": "OldManLogan",
-          "name": "Old Man Logan",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OldManLogan_d9559148.png",
-          "isMapped": true
-        },
-        {
-          "id": "PandaPool",
-          "name": "Pandapool",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_PandaPool_78bd2983.png",
-          "isMapped": true
-        }
-      ],
-      "totalBattles": 115,
-      "defensiveWins": 34,
-      "defendRate": 29.6
     },
     {
       "characters": [

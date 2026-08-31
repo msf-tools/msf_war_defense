@@ -127,8 +127,47 @@ test('tracks War and character freshness independently', () => {
     now: new Date('2026-08-31T12:00:00Z'),
     warDataAsOf: new Date('2026-08-31T11:45:00Z'),
     characterDataAsOf: new Date('2026-05-17T08:24:58.352Z'),
+    characterOverrideCount: 10,
+    characterOverrideDataAsOf: new Date('2026-08-31T11:30:00Z'),
   })
   assert.equal(snapshot.meta.warDataAsOf, '2026-08-31T11:45:00.000Z')
   assert.equal(snapshot.meta.characterDataAsOf, '2026-05-17T08:24:58.352Z')
   assert.equal(snapshot.meta.sourceDataAsOf, '2026-05-17T08:24:58.352Z')
+  assert.equal(snapshot.meta.characterOverrideCount, 10)
+  assert.equal(snapshot.meta.characterOverrideDataAsOf, '2026-08-31T11:30:00.000Z')
+  assert.equal(snapshot.meta.sources.characterBootstrap.recordCount, 10)
+})
+
+test('rejects character override metadata without a valid observation time', () => {
+  assert.throws(
+    () => buildSnapshot({
+      warResponse: makeWar(),
+      charactersResponse: makeCharacters(),
+      characterOverrideCount: 1,
+    }),
+    /valid source timestamp/,
+  )
+})
+
+test('clears bootstrap provenance after an identical authenticated catalog refresh', () => {
+  const first = buildSnapshot({
+    warResponse: makeWar(),
+    charactersResponse: makeCharacters(),
+    now: new Date('2026-08-30T12:00:00Z'),
+    characterDataAsOf: new Date('2026-05-17T08:24:58.352Z'),
+    characterOverrideCount: 10,
+    characterOverrideDataAsOf: new Date('2026-08-30T11:30:00Z'),
+  })
+  const authenticated = buildSnapshot({
+    warResponse: makeWar(),
+    charactersResponse: makeCharacters(),
+    previousSnapshot: first.snapshot,
+    now: new Date('2026-08-31T12:00:00Z'),
+    characterDataAsOf: new Date('2026-08-31T11:45:00Z'),
+  })
+  assert.equal(authenticated.changed, true)
+  assert.equal(authenticated.snapshot.meta.characterOverrideCount, 0)
+  assert.equal(authenticated.snapshot.meta.characterOverrideDataAsOf, null)
+  assert.equal(authenticated.snapshot.meta.characterDataAsOf, '2026-08-31T11:45:00.000Z')
+  assert.equal(authenticated.snapshot.meta.sources.characterBootstrap, undefined)
 })

@@ -21,6 +21,23 @@ function option(name) {
   return index >= 0 ? process.argv[index + 1] : null
 }
 
+function responseRows(payload, label) {
+  if (Array.isArray(payload)) return payload
+  if (payload && Array.isArray(payload.data)) return payload.data
+  throw new Error(`${label} JSON must contain an array`)
+}
+
+function mergeCharacterResponses(basePayload, overridePayload) {
+  const byId = new Map()
+  for (const row of responseRows(basePayload, 'Character')) {
+    if (row && typeof row.id === 'string' && row.id.trim()) byId.set(row.id.trim(), row)
+  }
+  for (const row of responseRows(overridePayload, 'Character override')) {
+    if (row && typeof row.id === 'string' && row.id.trim()) byId.set(row.id.trim(), row)
+  }
+  return { data: [...byId.values()] }
+}
+
 async function readJson(path, label) {
   try {
     return JSON.parse(await readFile(resolve(path), 'utf8'))
@@ -42,6 +59,7 @@ async function main() {
   const warFile = option('--war-file')
   const charactersFile = option('--characters-file')
   const warOnly = process.argv.includes('--war-only')
+  const characterOverridesFile = option('--character-overrides-file')
   const sourceAsOfOption = option('--source-as-of')
   const warSourceAsOfOption = option('--war-source-as-of') || sourceAsOfOption
   const characterSourceAsOfOption = option('--character-source-as-of') || sourceAsOfOption
@@ -50,6 +68,9 @@ async function main() {
   }
   if ((warFile && !charactersFile) || (!warFile && charactersFile)) {
     throw new Error('Use --war-file and --characters-file together, or omit both to fetch live data')
+  }
+  if (characterOverridesFile && !warFile && !warOnly) {
+    throw new Error('--character-overrides-file is only valid with operator-provided files or --war-only')
   }
   if ((sourceAsOfOption || warSourceAsOfOption || characterSourceAsOfOption) && !warFile) {
     throw new Error('Source timestamp options are only valid with operator-provided files')
@@ -69,6 +90,10 @@ async function main() {
 
   let warResponse
   let charactersResponse
+  let characterOverrideCount = warOnly ? previousSnapshot.meta.characterOverrideCount || 0 : 0
+  let characterOverrideDataAsOf = warOnly && previousSnapshot.meta.characterOverrideDataAsOf
+    ? new Date(previousSnapshot.meta.characterOverrideDataAsOf)
+    : null
   if (warFile) {
     console.log('Building from operator-provided JSON files…')
     ;[warResponse, charactersResponse] = await Promise.all([
@@ -83,6 +108,19 @@ async function main() {
     console.log('Fetching current aggregate War and character data…')
     ;[warResponse, charactersResponse] = await Promise.all([fetchWarMeta(), fetchAllCharacters()])
   }
+  if (characterOverridesFile) {
+    const overridesResponse = await readJson(characterOverridesFile, 'character override')
+    const overrideRows = responseRows(overridesResponse, 'Character override')
+    const observedAt = overridesResponse?.meta?.observedAt
+    characterOverrideDataAsOf = new Date(observedAt)
+    if (!observedAt || Number.isNaN(characterOverrideDataAsOf.getTime())) {
+      throw new Error('Character override JSON must include a valid meta.observedAt timestamp')
+    }
+    characterOverrideCount = new Set(
+      overrideRows.filter((row) => row && typeof row.id === 'string' && row.id.trim()).map((row) => row.id.trim()),
+    ).size
+    charactersResponse = mergeCharacterResponses(charactersResponse, overridesResponse)
+  }
   const { snapshot, changed } = buildSnapshot({
     warResponse,
     charactersResponse,
@@ -90,6 +128,8 @@ async function main() {
     now,
     warDataAsOf,
     characterDataAsOf,
+    characterOverrideCount,
+    characterOverrideDataAsOf,
   })
 
   if (!changed) {
