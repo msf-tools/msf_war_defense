@@ -34,16 +34,34 @@ export async function fetchWarMeta() {
 }
 
 async function fetchAccessToken() {
-  const credentials = Buffer.from(`${requiredEnv('MSF_CLIENT_ID')}:${requiredEnv('MSF_CLIENT_SECRET')}`).toString('base64')
-  const payload = await fetchJson(TOKEN_URL, {
+  const clientId = requiredEnv('MSF_CLIENT_ID')
+  const clientSecret = requiredEnv('MSF_CLIENT_SECRET')
+  const credentials = Buffer.from(`${clientId}:${clientSecret}`).toString('base64')
+  const commonOptions = {
     method: 'POST',
     headers: {
-      Authorization: `Basic ${credentials}`,
       'Content-Type': 'application/x-www-form-urlencoded',
       Accept: 'application/json',
     },
-    body: new URLSearchParams({ grant_type: 'client_credentials' }).toString(),
-  })
+  }
+  let payload
+  try {
+    payload = await fetchJson(TOKEN_URL, {
+      ...commonOptions,
+      headers: { ...commonOptions.headers, Authorization: `Basic ${credentials}` },
+      body: new URLSearchParams({ grant_type: 'client_credentials' }).toString(),
+    })
+  } catch (error) {
+    if (!error.message.includes('(401)') || !error.message.includes('invalid_client')) throw error
+    payload = await fetchJson(TOKEN_URL, {
+      ...commonOptions,
+      body: new URLSearchParams({
+        grant_type: 'client_credentials',
+        client_id: clientId,
+        client_secret: clientSecret,
+      }).toString(),
+    })
+  }
   if (!payload.access_token) throw new Error('OAuth token response did not include an access token')
   return payload.access_token
 }
