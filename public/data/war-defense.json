@@ -1,19 +1,19 @@
 {
   "meta": {
     "schemaVersion": 3,
-    "generatedAt": "2026-08-31T04:07:18.286Z",
-    "dataChangedAt": "2026-08-31T04:07:18.286Z",
-    "sourceDataAsOf": "2026-05-17T08:24:58.352Z",
-    "warDataAsOf": "2026-08-31T04:07:18.286Z",
-    "characterDataAsOf": "2026-05-17T08:24:58.352Z",
-    "characterOverrideCount": 10,
-    "characterOverrideDataAsOf": "2026-08-31T04:02:17.000Z",
+    "generatedAt": "2026-08-31T04:20:37.075Z",
+    "dataChangedAt": "2026-08-31T04:20:37.075Z",
+    "sourceDataAsOf": "2026-08-31T04:20:37.075Z",
+    "warDataAsOf": "2026-08-31T04:20:37.075Z",
+    "characterDataAsOf": "2026-08-31T04:20:37.075Z",
+    "characterOverrideCount": 0,
+    "characterOverrideDataAsOf": null,
     "squadCount": 1000,
-    "characterCount": 472,
+    "characterCount": 512,
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "865cd64ba4f3140c405b2c10ebaa2f60a2721e67f86f43913f391134be79aa74",
+    "contentHash": "1acba4fa2aa819a4f1b48b1d57eecad973b99b9d43e0d3257daa2adc7f2798d6",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -24,12 +24,6 @@
         "id": "official-site-war-defense-service",
         "url": "https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense",
         "documented": false
-      },
-      "characterBootstrap": {
-        "id": "official-msf-character-directory",
-        "url": "https://marvelstrikeforce.com/en/characters",
-        "documented": false,
-        "recordCount": 10
       }
     }
   },
@@ -48,6 +42,11 @@
       "id": "AimDmg_Offense",
       "name": "A.I.M. Monstrosity",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_AimDmg_Offense_2f83276e.png"
+    },
+    {
+      "id": "AimOperator",
+      "name": "A.I.M. Operator",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_AimControl_Infect_ce0fff40.png"
     },
     {
       "id": "AimSupport_Heal",
@@ -106,6 +105,11 @@
     },
     {
       "id": "Annihilus",
+      "name": "Annihilus",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Annihilus_38efc4a8.png"
+    },
+    {
+      "id": "PVE_Annihilus_Tower",
       "name": "Annihilus",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Annihilus_38efc4a8.png"
     },
@@ -196,6 +200,11 @@
     },
     {
       "id": "BlackWidow",
+      "name": "Black Widow",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BlackWidow_ad4f751d.png"
+    },
+    {
+      "id": "BlackWidowOperator",
       "name": "Black Widow",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BlackWidow_ad4f751d.png"
     },
@@ -303,6 +312,21 @@
       "id": "CarnageKnullSummon",
       "name": "Carnage (Enraged)",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Carnage_2d848a59.png"
+    },
+    {
+      "id": "VIPMaleAOperator",
+      "name": "Civilian",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_VIP_A_2dc77cfa.png"
+    },
+    {
+      "id": "VIPMaleBOperator",
+      "name": "Civilian",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_VIP_A_2dc77cfa.png"
+    },
+    {
+      "id": "VIPMaleCOperator",
+      "name": "Civilian",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_VIP_A_2dc77cfa.png"
     },
     {
       "id": "Cloak",
@@ -450,6 +474,16 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Deathpool_da382246.png"
     },
     {
+      "id": "DevilDinosaur",
+      "name": "Devil Dinosaur",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_DevilDinosaur_d8da5bf8.png"
+    },
+    {
+      "id": "Buddy",
+      "name": "Doctor Doom",
+      "portrait": null
+    },
+    {
       "id": "Doom",
       "name": "Doctor Doom",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Doom_64090095.png"
@@ -466,6 +500,11 @@
     },
     {
       "id": "DoctorStrange",
+      "name": "Doctor Strange",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_DoctorStrange_28cf96fd.png"
+    },
+    {
+      "id": "DoctorStrangeOperator",
       "name": "Doctor Strange",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_DoctorStrange_28cf96fd.png"
     },
@@ -540,6 +579,16 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Elektra_05550515.png"
     },
     {
+      "id": "S_KreeControl_Assist",
+      "name": "Elite Kree Noble",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeControl_Assist_c401200a.png"
+    },
+    {
+      "id": "S_KreeDmg_Speed",
+      "name": "Elite Kree Reaper",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeDmg_Speed_3dcb8722.png"
+    },
+    {
       "id": "ElsaBloodstone",
       "name": "Elsa Bloodstone",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ElsaBloodstone_a0480728.png"
@@ -573,6 +622,11 @@
       "id": "FalconJoaquin",
       "name": "Falcon (Joaquin)",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_FalconJoaquin_cbb93159.png"
+    },
+    {
+      "id": "PvE_DDMrFantastic",
+      "name": "Fantastic-Bot",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MrFantastic_6cb887bf.png"
     },
     {
       "id": "Fantomex",
@@ -665,6 +719,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Groot_5cc29671.png"
     },
     {
+      "id": "Groot_Props",
+      "name": "Groot Props",
+      "portrait": null
+    },
+    {
       "id": "Guardian",
       "name": "Guardian",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Guardian_1aad8826.png"
@@ -720,6 +779,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_HandDmg_Bonus_d0ae6035.png"
     },
     {
+      "id": "HandOperator",
+      "name": "Hand Operator",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_HandControl_HealBlock_3520f4b3.png"
+    },
+    {
       "id": "GT_HandTank_Stealth",
       "name": "Hand Sentry",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_HandTank_Stealth_c6b75972.png"
@@ -766,6 +830,11 @@
     },
     {
       "id": "Heimdall",
+      "name": "Heimdall",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Heimdall_d913d17d.png"
+    },
+    {
+      "id": "HeimdallOperator",
       "name": "Heimdall",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Heimdall_d913d17d.png"
     },
@@ -843,6 +912,11 @@
       "id": "HydraDmg_AoE",
       "name": "Hydra Grenadier",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_HydraDmg_AoE_51bd86f6.png"
+    },
+    {
+      "id": "HydraOperator",
+      "name": "Hydra Operator",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_HydraSupport_Heal_78531acf.png"
     },
     {
       "id": "HydraDmg_Buff",
@@ -930,6 +1004,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronFist_723e9bed.png"
     },
     {
+      "id": "IronFistOperator",
+      "name": "Iron Fist",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronFist_723e9bed.png"
+    },
+    {
       "id": "IronFistOrson",
       "name": "Iron Fist (WWII)",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronFistOrson_e312d26b.png"
@@ -955,6 +1034,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ZombieIronMan_a7f95a4c.png"
     },
     {
+      "id": "IronMonger",
+      "name": "Iron Monger",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronMonger_9bc2dd9a.png"
+    },
+    {
       "id": "IronPatriot",
       "name": "Iron Patriot",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronPatriot_0b6c142a.png"
@@ -973,6 +1057,11 @@
       "id": "IronheartMCU",
       "name": "Ironheart (MKII)",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronheartMCU_b96e802f.png"
+    },
+    {
+      "id": "EclipseRabbit",
+      "name": "Ixuh",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_EclipseRabbit_0ad0d6b2.png"
     },
     {
       "id": "JeanGrey",
@@ -1065,6 +1154,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingpin_a1cf8133.png"
     },
     {
+      "id": "KingpinOperator",
+      "name": "Kingpin",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingpin_a1cf8133.png"
+    },
+    {
       "id": "KittyPryde",
       "name": "Kitty Pryde",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KittyPryde_afd8f4cf.png"
@@ -1105,8 +1199,8 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeControl_Assist_c401200a.png"
     },
     {
-      "id": "S_KreeControl_Assist",
-      "name": "Kree Noble",
+      "id": "KreeOperator",
+      "name": "Kree Operator",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeControl_Assist_c401200a.png"
     },
     {
@@ -1116,11 +1210,6 @@
     },
     {
       "id": "KreeDmg_Speed",
-      "name": "Kree Reaper",
-      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeDmg_Speed_3dcb8722.png"
-    },
-    {
-      "id": "S_KreeDmg_Speed",
       "name": "Kree Reaper",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeDmg_Speed_3dcb8722.png"
     },
@@ -1150,9 +1239,19 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_LivingMummy_bc04839b.png"
     },
     {
+      "id": "LivingTribunal",
+      "name": "Living Tribunal",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KreeControl_Assist_c401200a.png"
+    },
+    {
       "id": "Lizard",
       "name": "Lizard",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Lizard_573d00b9.png"
+    },
+    {
+      "id": "Lockjaw",
+      "name": "Lockjaw",
+      "portrait": null
     },
     {
       "id": "Loki",
@@ -1215,6 +1314,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Magik_7ff86837.png"
     },
     {
+      "id": "MagikBreaker",
+      "name": "Magik Breaker",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagikBreaker_438fa832.png"
+    },
+    {
       "id": "Magneto",
       "name": "Magneto",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Magneto_e7d4c5dc.png"
@@ -1262,6 +1366,11 @@
     {
       "id": "MercSupport_Buffs",
       "name": "Mercenary Lieutenant",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MercSupport_Buffs_f38a2f64.png"
+    },
+    {
+      "id": "MercOperator",
+      "name": "Mercenary Operator",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MercSupport_Buffs_f38a2f64.png"
     },
     {
@@ -1323,6 +1432,11 @@
       "id": "Mockingbird",
       "name": "Mockingbird",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mockingbird_22f5db10.png"
+    },
+    {
+      "id": "Mojo",
+      "name": "Mojo",
+      "portrait": null
     },
     {
       "id": "MoonGirl",
@@ -1400,6 +1514,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mysterio_ab8220b7.png"
     },
     {
+      "id": "MysteryMan",
+      "name": "Mystery Man",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MysteryMan_1395eae4.png"
+    },
+    {
       "id": "Mystique",
       "name": "Mystique",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mystique_e90e0064.png"
@@ -1435,6 +1554,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_NickFury_81bd76be.png"
     },
     {
+      "id": "NickFuryOperator",
+      "name": "Nick Fury",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_NickFury_81bd76be.png"
+    },
+    {
       "id": "NicoMinoru",
       "name": "Nico Minoru",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_NicoMinoru_dd1344d8.png"
@@ -1466,6 +1590,11 @@
     },
     {
       "id": "Nobu",
+      "name": "Nobu",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Nobu_e815e3a3.png"
+    },
+    {
+      "id": "NobuOperator",
       "name": "Nobu",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Nobu_e815e3a3.png"
     },
@@ -1555,6 +1684,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Phoenix_d05c646c.png"
     },
     {
+      "id": "Vahl_Phoenix",
+      "name": "Phoenix",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Vahl_Phoenix_fcdabe92.png"
+    },
+    {
       "id": "Photon",
       "name": "Photon",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Photon_ff1bdc55.png"
@@ -1598,6 +1732,11 @@
       "id": "Punisher",
       "name": "Punisher",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Punisher_c270e1bc.png"
+    },
+    {
+      "id": "Punisher_Iso8NUE",
+      "name": "Punisher Iso8 NUE",
+      "portrait": null
     },
     {
       "id": "Pyro",
@@ -1680,6 +1819,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RedSkull_746e9cd4.png"
     },
     {
+      "id": "RedSkullOperator",
+      "name": "Red Skull",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RedSkull_746e9cd4.png"
+    },
+    {
       "id": "Rescue",
       "name": "Rescue",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Rescue_ccc39988.png"
@@ -1698,6 +1842,21 @@
       "id": "RocketRaccoon",
       "name": "Rocket Raccoon",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RocketRaccoon_5362342a.png"
+    },
+    {
+      "id": "RocketRaccoonOperator",
+      "name": "Rocket Raccoon",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RocketRaccoon_5362342a.png"
+    },
+    {
+      "id": "RocketRaccoon_BBMinn",
+      "name": "Rocket Raccoon BBMinn",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RocketRaccoon_5362342a.png"
+    },
+    {
+      "id": "RocketRaccoon_Props",
+      "name": "Rocket Raccoon Props",
+      "portrait": null
     },
     {
       "id": "Rogue",
@@ -1747,6 +1906,11 @@
     {
       "id": "War_ShieldSupport_Stealth",
       "name": "S.H.I.E.L.D. Operative",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ShieldSupport_Stealth_e01f37d5.png"
+    },
+    {
+      "id": "ShieldOperator",
+      "name": "S.H.I.E.L.D. Operator",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ShieldSupport_Stealth_e01f37d5.png"
     },
     {
@@ -1860,6 +2024,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Sentry_f9c81c79.png"
     },
     {
+      "id": "Serpent",
+      "name": "Serpent",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Serpent_84c87ec3.png"
+    },
+    {
       "id": "Sersi",
       "name": "Sersi",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Sersi_5d755fce.png"
@@ -1943,6 +2112,11 @@
       "id": "Speedball",
       "name": "Speedball",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Speedball_be6ed422.png"
+    },
+    {
+      "id": "NUESpiderMan",
+      "name": "Spider-Man",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderMan_4fdcec3d.png"
     },
     {
       "id": "SpiderMan",
@@ -2165,6 +2339,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thor_b41367e3.png"
     },
     {
+      "id": "ThorOperator",
+      "name": "Thor",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thor_b41367e3.png"
+    },
+    {
       "id": "Thor_InfinityWar",
       "name": "Thor (Infinity War)",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thor_InfinityWar_a5f8fad1.png"
@@ -2220,6 +2399,11 @@
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Ultron_6e1fbd4f.png"
     },
     {
+      "id": "UltronOperator",
+      "name": "Ultron",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Ultron_6e1fbd4f.png"
+    },
+    {
       "id": "UltronDmg_Speed",
       "name": "Ultron Accelerator",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_UltronDmg_Speed_57550aee.png"
@@ -2243,6 +2427,11 @@
       "id": "UltronTank_Taunt",
       "name": "Ultron Reinforcer",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_UltronTank_Taunt_a1ba22c3.png"
+    },
+    {
+      "id": "UlyssesKlaue",
+      "name": "Ulysses Klaue",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_UlyssesKlaue_d91e6ae2.png"
     },
     {
       "id": "Greg",
@@ -2343,6 +2532,11 @@
       "id": "Wasp",
       "name": "Wasp",
       "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Wasp_f28d68b1.png"
+    },
+    {
+      "id": "Whiplash",
+      "name": "Whiplash",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Whiplash_87777351.png"
     },
     {
       "id": "WhiteTiger",
