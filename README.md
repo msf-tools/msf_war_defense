@@ -19,7 +19,7 @@ Provisional War service ───┘
 - The aggregate War service is **not present in the documented Developer API**. It is an undocumented, provisional dependency that may change or disappear. Confirmation from Scopely or the official MSF API community is prudent before treating it as permanent.
 - The frontend reads only [`public/data/war-defense.json`](public/data/war-defense.json). Raw upstream response shapes stop at the ingestion layer.
 
-The checked-in bootstrap snapshot was normalized from the repository's April 12, 2026 War data and a May 17, 2026 character snapshot from the sibling Ability Search project. A credentialed refresh should be run before production cutover.
+The snapshot tracks War-result freshness separately from character-metadata freshness. If the authenticated character request is unavailable, the pipeline can still update War results while retaining the last validated character names and portraits.
 
 ## Local development
 
@@ -62,6 +62,16 @@ npm run refresh-data
 
 The command uses the OAuth client-credentials flow, fetches every character page, fetches the aggregate War response once, joins the two sources, validates the result, and atomically replaces the static snapshot only after every check passes. Secret values are never printed or written to output.
 
+### Refresh War results without OAuth
+
+If the character credentials are temporarily unavailable, the operator can still fetch current aggregate War results and reuse the character catalog from the last-known-good snapshot:
+
+```bash
+npm run refresh-data -- --war-only
+```
+
+This mode keeps the two source dates separate in the snapshot and in the UI. New character IDs that are not yet in the retained catalog receive readable names and portrait fallbacks until a full credentialed refresh succeeds.
+
 ### Build from operator-provided files
 
 This is the manual fallback when a live source is unavailable:
@@ -70,10 +80,11 @@ This is the manual fallback when a live source is unavailable:
 npm run refresh-data -- \
   --war-file /absolute/path/to/war-response.json \
   --characters-file /absolute/path/to/characters-response.json \
-  --source-as-of 2026-08-30T12:00:00Z
+  --war-source-as-of 2026-08-30T12:00:00Z \
+  --character-source-as-of 2026-05-17T08:24:58Z
 ```
 
-Both files are required together. `--source-as-of` is required operationally when the files are not freshly fetched so the UI does not overstate freshness.
+Both files are required together. Use the source-specific timestamp options when their dates differ; `--source-as-of` remains a shorthand when both files share the same date.
 
 ## Validation and last-known-good behavior
 
@@ -93,7 +104,7 @@ If fetching, parsing, joining, validation, testing, linting, or building fails, 
 
 ## Scheduled refresh
 
-[`update-data.yml`](.github/workflows/update-data.yml) runs once daily at 12:17 UTC and can also be dispatched manually. It requires these GitHub Actions secrets:
+[`update-data.yml`](.github/workflows/update-data.yml) runs once daily at 12:17 UTC and can also be dispatched manually. It first attempts a full refresh. If character authentication fails, it automatically attempts the validated War-only fallback so current aggregate results are not unnecessarily blocked. A full refresh requires these GitHub Actions secrets:
 
 - `MSF_CLIENT_ID`
 - `MSF_CLIENT_SECRET`

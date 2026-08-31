@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 
-export const SCHEMA_VERSION = 2
+export const SCHEMA_VERSION = 3
 export const CHARACTER_SOURCE = 'https://api.marvelstrikeforce.com/game/v1/characters'
 export const WAR_SOURCE = 'https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense'
 
@@ -108,12 +108,12 @@ export function prettifyCharacterId(id) {
     .trim()
 }
 
-function snapshotContent(teams) {
-  return JSON.stringify(teams)
+function snapshotContent(teams, characters) {
+  return JSON.stringify({ teams, characters })
 }
 
-function contentHash(teams) {
-  return createHash('sha256').update(snapshotContent(teams)).digest('hex')
+function contentHash(teams, characters) {
+  return createHash('sha256').update(snapshotContent(teams, characters)).digest('hex')
 }
 
 function previousPortraitCoverage(previousSnapshot) {
@@ -123,12 +123,15 @@ function previousPortraitCoverage(previousSnapshot) {
 }
 
 export function validateSnapshot(snapshot, previousSnapshot = null) {
-  const { teams, meta } = snapshot
+  const { teams, characters, meta } = snapshot
   if (!Array.isArray(teams) || teams.length < MIN_SQUAD_COUNT) {
     throw new Error(`Suspicious squad count: expected at least ${MIN_SQUAD_COUNT}, received ${teams?.length ?? 0}`)
   }
   if (!Number.isInteger(meta.characterCount) || meta.characterCount < MIN_CHARACTER_COUNT) {
     throw new Error(`Suspicious character count: expected at least ${MIN_CHARACTER_COUNT}, received ${meta.characterCount}`)
+  }
+  if (!Array.isArray(characters) || characters.length !== meta.characterCount) {
+    throw new Error('Snapshot character catalog does not match its character count')
   }
 
   if (previousSnapshot?.teams?.length) {
@@ -165,6 +168,8 @@ export function buildSnapshot({
   previousSnapshot = null,
   now = new Date(),
   sourceDataAsOf = now,
+  warDataAsOf = sourceDataAsOf,
+  characterDataAsOf = sourceDataAsOf,
 }) {
   const { records, duplicateCount } = normalizeWarResponse(warResponse)
   const characters = normalizeCharacters(charactersResponse)
@@ -183,22 +188,34 @@ export function buildSnapshot({
     defendRate: record.defendRate,
   }))
   const portraitSlots = teams.flatMap((team) => team.characters)
-  const hash = contentHash(teams)
+  const hash = contentHash(teams, characters)
   const previousHash = previousSnapshot?.meta?.contentHash
   const contentChanged = hash !== previousHash
-  const contractChanged = previousSnapshot?.meta?.schemaVersion !== SCHEMA_VERSION || !previousSnapshot?.meta?.sourceDataAsOf
+  const contractChanged = previousSnapshot?.meta?.schemaVersion !== SCHEMA_VERSION ||
+    !previousSnapshot?.meta?.warDataAsOf ||
+    !previousSnapshot?.meta?.characterDataAsOf
   const generatedAt = !contentChanged && previousSnapshot?.meta?.generatedAt
     ? previousSnapshot.meta.generatedAt
     : now.toISOString()
+  const resolvedWarDataAsOf = !contentChanged && previousSnapshot?.meta?.warDataAsOf
+    ? previousSnapshot.meta.warDataAsOf
+    : warDataAsOf.toISOString()
+  const resolvedCharacterDataAsOf = !contentChanged && previousSnapshot?.meta?.characterDataAsOf
+    ? previousSnapshot.meta.characterDataAsOf
+    : characterDataAsOf.toISOString()
+  const oldestSourceTimestamp = new Date(Math.min(
+    new Date(resolvedWarDataAsOf).getTime(),
+    new Date(resolvedCharacterDataAsOf).getTime(),
+  )).toISOString()
 
   const snapshot = {
     meta: {
       schemaVersion: SCHEMA_VERSION,
       generatedAt,
       dataChangedAt: generatedAt,
-      sourceDataAsOf: !contentChanged && previousSnapshot?.meta?.sourceDataAsOf
-        ? previousSnapshot.meta.sourceDataAsOf
-        : sourceDataAsOf.toISOString(),
+      sourceDataAsOf: oldestSourceTimestamp,
+      warDataAsOf: resolvedWarDataAsOf,
+      characterDataAsOf: resolvedCharacterDataAsOf,
       squadCount: teams.length,
       characterCount: characters.length,
       unmappedCharacterCount: unmappedIds.size,
@@ -212,6 +229,7 @@ export function buildSnapshot({
         war: { id: 'official-site-war-defense-service', url: WAR_SOURCE, documented: false },
       },
     },
+    characters,
     teams,
   }
 
@@ -225,7 +243,7 @@ export function validateExistingSnapshot(snapshot) {
   if (snapshot?.meta?.schemaVersion !== SCHEMA_VERSION) {
     throw new Error(`Unsupported data schema version: ${snapshot?.meta?.schemaVersion ?? 'missing'}`)
   }
-  if (snapshot.meta.contentHash !== contentHash(snapshot.teams)) {
+  if (snapshot.meta.contentHash !== contentHash(snapshot.teams, snapshot.characters)) {
     throw new Error('Snapshot content hash does not match its team data')
   }
   return validateSnapshot(snapshot)
