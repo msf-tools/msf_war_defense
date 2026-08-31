@@ -72,6 +72,15 @@ npm run refresh-data -- --war-only
 
 This mode keeps the two source dates separate in the snapshot and in the UI. New character IDs that are not yet in the retained catalog receive readable names and portrait fallbacks until a full credentialed refresh succeeds.
 
+For a reviewed one-time bootstrap, an operator can merge a small set of current records from the official public character directory:
+
+```bash
+npm run refresh-data -- --war-only \
+  --character-overrides-file data/bootstrap-character-overrides.json
+```
+
+The override file must include `meta.observedAt`, and the snapshot records its source, observation time, and record count separately. This is a temporary enrichment path, not a replacement for the documented character API. A successful full authenticated refresh removes the bootstrap annotation and replaces the catalog with API data.
+
 ### Build from operator-provided files
 
 This is the manual fallback when a live source is unavailable:
@@ -80,11 +89,12 @@ This is the manual fallback when a live source is unavailable:
 npm run refresh-data -- \
   --war-file /absolute/path/to/war-response.json \
   --characters-file /absolute/path/to/characters-response.json \
+  --character-overrides-file data/bootstrap-character-overrides.json \
   --war-source-as-of 2026-08-30T12:00:00Z \
   --character-source-as-of 2026-05-17T08:24:58Z
 ```
 
-Both files are required together. Use the source-specific timestamp options when their dates differ; `--source-as-of` remains a shorthand when both files share the same date.
+The War and character files are required together. The override file is optional and must carry its own observation timestamp. Use the source-specific timestamp options when the main files' dates differ; `--source-as-of` remains a shorthand when both files share the same date.
 
 ## Validation and last-known-good behavior
 
@@ -96,6 +106,7 @@ Before writing, the ingestion code verifies that:
 - calculated defend rates are finite and between 0% and 100%;
 - the character payload contains at least 100 usable character records;
 - unmapped character IDs are counted and receive readable names plus portrait fallbacks;
+- bootstrap character overrides retain their own source, record count, and observation timestamp;
 - a refresh does not suddenly lose more than 40% of squads or 30% of portrait coverage compared with the last snapshot;
 - reordered duplicate squads are collapsed deterministically, retaining the record with the greatest battle count (then the greatest defensive-win count);
 - the checked-in content hash matches the team data.
@@ -154,6 +165,7 @@ Confirm Pages is deploying the `dist` artifact and that the repository path is e
 ## Project layout
 
 ```text
+data/                 reviewed temporary bootstrap source records
 src/components/       portrait cards, filters, and results controls
 src/hooks/            static snapshot loading
 src/utils/            pure filtering, sorting, and URL-state logic

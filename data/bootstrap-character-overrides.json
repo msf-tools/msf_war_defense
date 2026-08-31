@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "source": "https://marvelstrikeforce.com/en/characters",
+    "observedAt": "2026-08-31T04:02:17.000Z",
+    "purpose": "Temporary official-site bootstrap records for character IDs present in the War feed but absent from the last authenticated catalog"
+  },
+  "data": [
+    {
+      "id": "BladeMighty",
+      "name": "Blade (Mighty)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BladeMighty_a93a93c7.png"
+    },
+    {
+      "id": "Gilgamesh",
+      "name": "Gilgamesh",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Gilgamesh_1921c1b0.png"
+    },
+    {
+      "id": "Kingo",
+      "name": "Kingo",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Kingo_6c18bd6f.png"
+    },
+    {
+      "id": "RachelColeAlves",
+      "name": "Rachel Cole-Alves",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_RachelColeAlves_2b505892.png"
+    },
+    {
+      "id": "Riot",
+      "name": "Riot",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Riot_13f65950.png"
+    },
+    {
+      "id": "ScorpionBreaker",
+      "name": "Scorpion (Breaker)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_ScorpionBreaker_c48eccdb.png"
+    },
+    {
+      "id": "SpiderWomanJulia",
+      "name": "Spider-Woman (Julia)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderWomanJulia_d937fcea.png"
+    },
+    {
+      "id": "SymbioteQuicksilver",
+      "name": "Quicksilver (Symbiote)",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SymbioteQuicksilver_3c19011f.png"
+    },
+    {
+      "id": "Thena",
+      "name": "Thena",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Thena_d4d37608.png"
+    },
+    {
+      "id": "Toxin",
+      "name": "Toxin",
+      "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Toxin_13ab057e.png"
+    }
+  ]
+}

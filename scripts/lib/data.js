@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto'
 export const SCHEMA_VERSION = 3
 export const CHARACTER_SOURCE = 'https://api.marvelstrikeforce.com/game/v1/characters'
 export const WAR_SOURCE = 'https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense'
+export const CHARACTER_BOOTSTRAP_SOURCE = 'https://marvelstrikeforce.com/en/characters'
 
 const MIN_SQUAD_COUNT = 50
 const MIN_CHARACTER_COUNT = 100
@@ -133,6 +134,16 @@ export function validateSnapshot(snapshot, previousSnapshot = null) {
   if (!Array.isArray(characters) || characters.length !== meta.characterCount) {
     throw new Error('Snapshot character catalog does not match its character count')
   }
+  assertNonNegativeInteger(meta.characterOverrideCount ?? 0, 'Character override count')
+  if ((meta.characterOverrideCount ?? 0) > characters.length) {
+    throw new Error('Character override count cannot exceed the character catalog size')
+  }
+  if (
+    (meta.characterOverrideCount ?? 0) > 0 &&
+    (!meta.characterOverrideDataAsOf || Number.isNaN(new Date(meta.characterOverrideDataAsOf).getTime()))
+  ) {
+    throw new Error('Character overrides require a valid source timestamp')
+  }
 
   if (previousSnapshot?.teams?.length) {
     const minimum = Math.floor(previousSnapshot.teams.length * (1 - MAX_RECORD_DROP_RATIO))
@@ -170,6 +181,8 @@ export function buildSnapshot({
   sourceDataAsOf = now,
   warDataAsOf = sourceDataAsOf,
   characterDataAsOf = sourceDataAsOf,
+  characterOverrideCount = 0,
+  characterOverrideDataAsOf = null,
 }) {
   const { records, duplicateCount } = normalizeWarResponse(warResponse)
   const characters = normalizeCharacters(charactersResponse)
@@ -191,16 +204,21 @@ export function buildSnapshot({
   const hash = contentHash(teams, characters)
   const previousHash = previousSnapshot?.meta?.contentHash
   const contentChanged = hash !== previousHash
+  const normalizedOverrideDataAsOf = characterOverrideDataAsOf ? characterOverrideDataAsOf.toISOString() : null
+  const provenanceChanged = (previousSnapshot?.meta?.characterOverrideCount ?? 0) !== characterOverrideCount ||
+    (previousSnapshot?.meta?.characterOverrideDataAsOf ?? null) !== normalizedOverrideDataAsOf
   const contractChanged = previousSnapshot?.meta?.schemaVersion !== SCHEMA_VERSION ||
     !previousSnapshot?.meta?.warDataAsOf ||
-    !previousSnapshot?.meta?.characterDataAsOf
-  const generatedAt = !contentChanged && previousSnapshot?.meta?.generatedAt
+    !previousSnapshot?.meta?.characterDataAsOf ||
+    previousSnapshot?.meta?.characterOverrideCount === undefined
+  const materialChanged = contentChanged || provenanceChanged || contractChanged
+  const generatedAt = !materialChanged && previousSnapshot?.meta?.generatedAt
     ? previousSnapshot.meta.generatedAt
     : now.toISOString()
-  const resolvedWarDataAsOf = !contentChanged && previousSnapshot?.meta?.warDataAsOf
+  const resolvedWarDataAsOf = !materialChanged && previousSnapshot?.meta?.warDataAsOf
     ? previousSnapshot.meta.warDataAsOf
     : warDataAsOf.toISOString()
-  const resolvedCharacterDataAsOf = !contentChanged && previousSnapshot?.meta?.characterDataAsOf
+  const resolvedCharacterDataAsOf = !materialChanged && previousSnapshot?.meta?.characterDataAsOf
     ? previousSnapshot.meta.characterDataAsOf
     : characterDataAsOf.toISOString()
   const oldestSourceTimestamp = new Date(Math.min(
@@ -216,6 +234,8 @@ export function buildSnapshot({
       sourceDataAsOf: oldestSourceTimestamp,
       warDataAsOf: resolvedWarDataAsOf,
       characterDataAsOf: resolvedCharacterDataAsOf,
+      characterOverrideCount,
+      characterOverrideDataAsOf: normalizedOverrideDataAsOf,
       squadCount: teams.length,
       characterCount: characters.length,
       unmappedCharacterCount: unmappedIds.size,
@@ -227,6 +247,14 @@ export function buildSnapshot({
       sources: {
         characters: { id: 'official-msf-character-api', url: CHARACTER_SOURCE, documented: true },
         war: { id: 'official-site-war-defense-service', url: WAR_SOURCE, documented: false },
+        ...(characterOverrideCount > 0 ? {
+          characterBootstrap: {
+            id: 'official-msf-character-directory',
+            url: CHARACTER_BOOTSTRAP_SOURCE,
+            documented: false,
+            recordCount: characterOverrideCount,
+          },
+        } : {}),
       },
     },
     characters,
@@ -235,7 +263,7 @@ export function buildSnapshot({
 
   return {
     snapshot: validateSnapshot(snapshot, previousSnapshot),
-    changed: contentChanged || contractChanged,
+    changed: materialChanged,
   }
 }
 
