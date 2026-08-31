@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 
-export const SCHEMA_VERSION = 3
+export const SCHEMA_VERSION = 4
 export const CHARACTER_SOURCE = 'https://api.marvelstrikeforce.com/game/v1/characters'
 export const WAR_SOURCE = 'https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense'
 export const CHARACTER_BOOTSTRAP_SOURCE = 'https://marvelstrikeforce.com/en/characters'
@@ -89,10 +89,25 @@ export function normalizeCharacters(payload) {
   rows.forEach((row) => {
     if (!row || typeof row.id !== 'string' || !row.id.trim()) return
     const id = row.id.trim()
+    const traits = Array.isArray(row.traits)
+      ? [...new Map(row.traits.map((trait) => {
+        if (typeof trait === 'string' && trait.trim()) {
+          const traitId = trait.trim()
+          return [traitId, { id: traitId, name: prettifyCharacterId(traitId) }]
+        }
+        if (!trait || typeof trait.id !== 'string' || !trait.id.trim()) return null
+        const traitId = trait.id.trim()
+        const name = typeof trait.name === 'string' && trait.name.trim()
+          ? trait.name.trim()
+          : prettifyCharacterId(traitId)
+        return [traitId, { id: traitId, name }]
+      }).filter(Boolean)).values()].sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
+      : []
     const normalized = {
       id,
       name: typeof row.name === 'string' && row.name.trim() ? row.name.trim() : prettifyCharacterId(id),
       portrait: typeof row.portrait === 'string' && /^https:\/\//.test(row.portrait) ? row.portrait : null,
+      traits,
     }
     const existing = byId.get(id)
     if (!existing || (!existing.portrait && normalized.portrait)) byId.set(id, normalized)
@@ -134,6 +149,16 @@ export function validateSnapshot(snapshot, previousSnapshot = null) {
   if (!Array.isArray(characters) || characters.length !== meta.characterCount) {
     throw new Error('Snapshot character catalog does not match its character count')
   }
+  characters.forEach((character, index) => {
+    if (!Array.isArray(character.traits)) {
+      throw new Error(`Snapshot character ${index + 1} must contain a traits array`)
+    }
+    character.traits.forEach((trait) => {
+      if (!trait || typeof trait.id !== 'string' || !trait.id || typeof trait.name !== 'string' || !trait.name) {
+        throw new Error(`Snapshot character ${index + 1} contains an invalid trait`)
+      }
+    })
+  })
   assertNonNegativeInteger(meta.characterOverrideCount ?? 0, 'Character override count')
   if ((meta.characterOverrideCount ?? 0) > characters.length) {
     throw new Error('Character override count cannot exceed the character catalog size')
@@ -192,7 +217,14 @@ export function buildSnapshot({
   const teams = records.map((record) => ({
     characters: record.squad.map((id) => {
       const mapped = characterById.get(id)
-      if (mapped) return { ...mapped, isMapped: true }
+      if (mapped) {
+        return {
+          id: mapped.id,
+          name: mapped.name,
+          portrait: mapped.portrait,
+          isMapped: true,
+        }
+      }
       unmappedIds.add(id)
       return { id, name: prettifyCharacterId(id), portrait: null, isMapped: false }
     }),
