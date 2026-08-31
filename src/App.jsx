@@ -126,7 +126,7 @@ export default function App() {
       <footer>
         <div className="shell">
           <p>Community analysis tool. Not affiliated with or endorsed by Scopely.</p>
-          <p>The aggregate War service is provisional; the last validated snapshot remains available if refreshes fail.</p>
+          <p>The aggregate War service is provisional; the last validated snapshot remains available if refreshes fail. <a href={`${import.meta.env.BASE_URL}privacy.html`}>Privacy policy</a></p>
         </div>
       </footer>
     </>

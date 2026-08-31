@@ -4,6 +4,8 @@ A fast, mobile-friendly browser for aggregate **Marvel Strike Force Alliance War
 
 The site is a static React application. It never receives an MSF API credential and never calls an authenticated MSF API from a player's browser.
 
+The published site includes a plain-language [`privacy.html`](public/privacy.html) explaining that it does not request player or account information, use first-party analytics, or intentionally collect personal information. It also identifies the external hosting and portrait services that may receive ordinary web-request information.
+
 ## How the data path works
 
 ```text
