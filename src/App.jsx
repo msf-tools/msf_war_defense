@@ -3,7 +3,15 @@ import FilterPanel from './components/FilterPanel.jsx'
 import ResultsToolbar from './components/ResultsToolbar.jsx'
 import TeamCard from './components/TeamCard.jsx'
 import { useWarData } from './hooks/useWarData.js'
-import { countActiveFilters, DEFAULT_FILTERS, filterTeams, readFilters, sortTeams, writeFilters } from './utils/filters.js'
+import {
+  buildCharacterTraitMap,
+  countActiveFilters,
+  DEFAULT_FILTERS,
+  filterTeams,
+  readFilters,
+  sortTeams,
+  writeFilters,
+} from './utils/filters.js'
 
 const PAGE_SIZE = 60
 
@@ -19,17 +27,30 @@ export default function App() {
 
   const characters = useMemo(() => {
     if (!data) return []
-    const byId = new Map()
-    data.teams.flatMap((team) => team.characters).forEach((character) => {
-      if (!byId.has(character.id) || (!byId.get(character.id).portrait && character.portrait)) byId.set(character.id, character)
-    })
-    return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name))
+    return [...data.characters].sort((a, b) => a.name.localeCompare(b.name))
   }, [data])
+
+  const tags = useMemo(() => {
+    const byId = new Map()
+    characters.forEach((character) => {
+      ;(character.traits || []).forEach((trait) => {
+        const existing = byId.get(trait.id)
+        byId.set(trait.id, {
+          id: trait.id,
+          name: trait.name,
+          characterCount: (existing?.characterCount || 0) + 1,
+        })
+      })
+    })
+    return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
+  }, [characters])
+
+  const characterTraits = useMemo(() => buildCharacterTraitMap(characters), [characters])
 
   const results = useMemo(() => {
     if (!data) return []
-    return sortTeams(filterTeams(data.teams, filters), filters.sort)
-  }, [data, filters])
+    return sortTeams(filterTeams(data.teams, filters, characterTraits), filters.sort)
+  }, [characterTraits, data, filters])
 
   useEffect(() => {
     const query = writeFilters(filters)
@@ -88,7 +109,7 @@ export default function App() {
       </header>
 
       <main className="shell main-content">
-        <FilterPanel characters={characters} filters={filters} onChange={updateFilters} onReset={resetFilters} />
+        <FilterPanel characters={characters} tags={tags} filters={filters} onChange={updateFilters} onReset={resetFilters} />
         <section className="results" aria-labelledby="results-heading">
           <ResultsToolbar
             shown={shownResults.length}
@@ -116,7 +137,7 @@ export default function App() {
             <div className="empty-state">
               <span aria-hidden="true">◇</span>
               <h3>No defenses match that combination</h3>
-              <p>Try switching ALL to ANY, removing an exclusion, or lowering a threshold.</p>
+              <p>Try switching ALL to ANY, removing a character or tag, or lowering a threshold.</p>
               <button type="button" className="button" onClick={resetFilters}>Reset filters</button>
             </div>
           )}

@@ -24,6 +24,10 @@ function makeCharacters(count = 110, portraits = true) {
       id: `Character${index}`,
       name: `Character ${index}`,
       portrait: portraits ? `https://assets.example/character-${index}.png` : null,
+      traits: [
+        { id: index % 2 ? 'Tech' : 'Bio', name: index % 2 ? 'TECH' : 'BIO' },
+        { id: 'Global', name: 'GLOBAL' },
+      ],
     })),
   }
 }
@@ -61,14 +65,22 @@ test('deduplicates reordered squads deterministically by strongest sample', () =
   assert.equal(records[0].defensiveWins, 40)
 })
 
-test('normalizes character portraits and ignores unusable character rows', () => {
+test('normalizes character portraits and searchable traits while ignoring unusable rows', () => {
   assert.deepEqual(normalizeCharacters({ data: [
-    { id: 'AlphaWolf', name: '', portrait: 'http://unsafe.example/a.png' },
+    { id: 'AlphaWolf', name: '', portrait: 'http://unsafe.example/a.png', traits: ['Tech', { id: 'ShadowConclave', name: 'SHADOW CONCLAVE' }, { id: 'Tech', name: 'TECH' }] },
     { id: '', name: 'Nobody' },
-    { id: 'Beta', name: 'Beta', portrait: 'https://assets.example/b.png' },
+    { id: 'Beta', name: 'Beta', portrait: 'https://assets.example/b.png', traits: [{ id: 'Bio', name: 'BIO' }] },
   ] }), [
-    { id: 'AlphaWolf', name: 'Alpha Wolf', portrait: null },
-    { id: 'Beta', name: 'Beta', portrait: 'https://assets.example/b.png' },
+    {
+      id: 'AlphaWolf',
+      name: 'Alpha Wolf',
+      portrait: null,
+      traits: [
+        { id: 'ShadowConclave', name: 'SHADOW CONCLAVE' },
+        { id: 'Tech', name: 'TECH' },
+      ],
+    },
+    { id: 'Beta', name: 'Beta', portrait: 'https://assets.example/b.png', traits: [{ id: 'Bio', name: 'BIO' }] },
   ])
 })
 

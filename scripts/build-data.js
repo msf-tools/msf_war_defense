@@ -33,7 +33,15 @@ function mergeCharacterResponses(basePayload, overridePayload) {
     if (row && typeof row.id === 'string' && row.id.trim()) byId.set(row.id.trim(), row)
   }
   for (const row of responseRows(overridePayload, 'Character override')) {
-    if (row && typeof row.id === 'string' && row.id.trim()) byId.set(row.id.trim(), row)
+    if (row && typeof row.id === 'string' && row.id.trim()) {
+      const id = row.id.trim()
+      const existing = byId.get(id)
+      byId.set(id, {
+        ...existing,
+        ...row,
+        traits: row.traits ?? existing?.traits,
+      })
+    }
   }
   return { data: [...byId.values()] }
 }
