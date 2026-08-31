@@ -1,6 +1,19 @@
 import { useMemo } from 'react'
 import CriteriaPicker from './CriteriaPicker.jsx'
 
+const METADATA_FIELDS = ['traits', 'invisibleTraits', 'eventTraits']
+
+function searchableMetadata(character) {
+  return [...new Map(METADATA_FIELDS.flatMap((field) => character[field] || []).map((trait) => [trait.id, trait])).values()]
+}
+
+function metadataTypeLabel(types) {
+  if (types.length > 1) return 'Multiple metadata types'
+  if (types[0] === 'event') return 'Event metadata'
+  if (types[0] === 'hidden') return 'Hidden metadata'
+  return 'Roster trait'
+}
+
 export default function FilterPanel({ characters, tags, filters, onChange, onReset }) {
   const set = (partial) => onChange({ ...filters, ...partial })
   const options = useMemo(() => [
@@ -9,14 +22,14 @@ export default function FilterPanel({ characters, tags, filters, onChange, onRes
       kind: 'character',
       id: character.id,
       name: character.name,
-      detail: (character.traits || []).slice(0, 3).map((trait) => trait.name).join(' · '),
+      detail: searchableMetadata(character).map((trait) => trait.name).join(' · '),
     })),
     ...tags.map((tag) => ({
       key: `tag:${tag.id}`,
-      kind: 'tag',
+      kind: 'metadata',
       id: tag.id,
       name: tag.name,
-      detail: `${tag.characterCount.toLocaleString()} character${tag.characterCount === 1 ? '' : 's'}`,
+      detail: `${tag.characterCount.toLocaleString()} character${tag.characterCount === 1 ? '' : 's'} · ${metadataTypeLabel(tag.types)}`,
     })),
   ], [characters, tags])
 
@@ -47,12 +60,12 @@ export default function FilterPanel({ characters, tags, filters, onChange, onRes
       </div>
 
       <p className="filter-panel__hint">
-        Search character names or official tags such as Shadow Conclave, Symbiote, and Tech. ALL requires every included item somewhere on the squad; ANY accepts at least one. Exclusions remove a squad when any selected item matches.
+        Search character names or any official metadata—alignment, location, origin, role, faction, event tag, and more. ALL requires every included item somewhere on the squad; ANY accepts at least one. Exclusions remove a squad when any selected item matches.
       </p>
 
       <div className="picker-grid">
         <CriteriaPicker
-          label="Include characters or tags"
+          label="Include characters or metadata"
           options={options}
           selectedKeys={includeKeys}
           unavailableKeys={excludeKeys}
@@ -60,7 +73,7 @@ export default function FilterPanel({ characters, tags, filters, onChange, onRes
           tone="include"
         />
         <CriteriaPicker
-          label="Exclude characters or tags"
+          label="Exclude characters or metadata"
           options={options}
           selectedKeys={excludeKeys}
           unavailableKeys={includeKeys}
@@ -71,7 +84,7 @@ export default function FilterPanel({ characters, tags, filters, onChange, onRes
 
       <div className="filter-controls">
         <fieldset className="mode-control">
-          <legend>Include match across characters + tags</legend>
+          <legend>Include match across characters + metadata</legend>
           <div className="segmented">
             <button type="button" aria-pressed={filters.matchMode === 'all'} onClick={() => set({ matchMode: 'all' })}>ALL</button>
             <button type="button" aria-pressed={filters.matchMode === 'any'} onClick={() => set({ matchMode: 'any' })}>ANY</button>

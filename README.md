@@ -1,6 +1,6 @@
 # MSF War Defense Browser
 
-A fast, mobile-friendly browser for aggregate **Marvel Strike Force Alliance War defense** results. It helps players compare defensive squads by defend rate, defensive wins, and battle volume, then narrow the field with character and official-tag includes, exclusions, thresholds, and `ALL` / `ANY` matching.
+A fast, mobile-friendly browser for aggregate **Marvel Strike Force Alliance War defense** results. It helps players compare defensive squads by defend rate, defensive wins, and battle volume, then narrow the field with character and official-metadata includes, exclusions, thresholds, and `ALL` / `ANY` matching.
 
 The site is a static React application. It never receives an MSF API credential and never calls an authenticated MSF API from a player's browser.
 
@@ -14,7 +14,7 @@ Documented character API ──┐
 Provisional War service ───┘
 ```
 
-- Character names, portrait URLs, and official traits come from the documented [`GET /game/v1/characters`](https://developer.marvelstrikeforce.com/beta/msf-api.json) Developer API.
+- Character names, portrait URLs, visible traits, hidden traits, and event traits come from the documented [`GET /game/v1/characters`](https://developer.marvelstrikeforce.com/beta/msf-api.json) Developer API.
 - Aggregate defensive-team statistics come from the official site's [`getWarMeta?type=defense`](https://api-prod.marvelstrikeforce.com/services/getWarMeta?type=defense) service.
 - The aggregate War service is **not present in the documented Developer API**. It is an undocumented, provisional dependency that may change or disappear. Confirmation from Scopely or the official MSF API community is prudent before treating it as permanent.
 - The frontend reads only [`public/data/war-defense.json`](public/data/war-defense.json). Raw upstream response shapes stop at the ingestion layer.
@@ -32,7 +32,7 @@ npm run dev
 
 Vite serves the app locally and uses `/msf_war_defense/` as its production base path for GitHub Pages. Character and tag selections are reflected in URL parameters, so a filtered view can be bookmarked or shared.
 
-The include and exclude selectors combine character names with official MSF traits such as team affiliations, origins, roles, and broad labels. Each selected item becomes a separate removable chip. `ALL` requires every included character or tag somewhere on the squad; `ANY` accepts at least one included item. Exclusions always remove a squad when any selected character or tag matches.
+The include and exclude selectors combine character names with official MSF metadata such as alignment, location, origin, role, team affiliation, hidden traits, and event traits. Each selected item becomes a separate removable chip. `ALL` requires every included character or metadata value somewhere on the squad; `ANY` accepts at least one included item. Exclusions always remove a squad when any selected character or metadata value matches.
 
 Useful checks:
 
@@ -107,7 +107,7 @@ Before writing, the ingestion code verifies that:
 - totals and defensive wins are non-negative integers, with wins no greater than total battles;
 - calculated defend rates are finite and between 0% and 100%;
 - the character payload contains at least 100 usable character records;
-- every normalized character contains a validated, deterministic list of searchable official traits;
+- every normalized character contains validated, deterministic lists of searchable visible, hidden, and event traits;
 - unmapped character IDs are counted and receive readable names plus portrait fallbacks;
 - bootstrap character overrides retain their own source, record count, and observation timestamp;
 - a refresh does not suddenly lose more than 40% of squads or 30% of portrait coverage compared with the last snapshot;

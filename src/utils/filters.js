@@ -14,7 +14,8 @@ const SORT_VALUES = new Set(['rate-desc', 'wins-desc', 'battles-desc', 'names-as
 export function buildCharacterTraitMap(characters) {
   return new Map(characters.map((character) => [
     character.id,
-    new Set((character.traits || []).map((trait) => typeof trait === 'string' ? trait : trait.id).filter(Boolean)),
+    new Set(['traits', 'invisibleTraits', 'eventTraits'].flatMap((field) =>
+      (character[field] || []).map((trait) => typeof trait === 'string' ? trait : trait.id).filter(Boolean))),
   ]))
 }
 
@@ -27,10 +28,9 @@ export function filterTeams(teams, filters, characterTraits = new Map()) {
   return teams.filter((team) => {
     const ids = new Set(team.characters.map((character) => character.id))
     const tags = new Set(team.characters.flatMap((character) => {
-      if (Array.isArray(character.traits)) {
-        return character.traits.map((trait) => typeof trait === 'string' ? trait : trait.id).filter(Boolean)
-      }
-      return [...(characterTraits.get(character.id) || [])]
+      const embedded = ['traits', 'invisibleTraits', 'eventTraits'].flatMap((field) =>
+        (character[field] || []).map((trait) => typeof trait === 'string' ? trait : trait.id).filter(Boolean))
+      return [...embedded, ...(characterTraits.get(character.id) || [])]
     }))
     if (include.size || includeTags.size) {
       const matches = [

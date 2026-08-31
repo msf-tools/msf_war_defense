@@ -33,7 +33,7 @@ export default function CriteriaPicker({ label, options, selectedKeys, unavailab
     return options
       .filter((option) => !unavailable.has(option.key) && normalized(`${option.name} ${option.id}`).includes(normalizedQuery))
       .sort((a, b) => scoreOption(a, normalizedQuery) - scoreOption(b, normalizedQuery) ||
-        a.name.localeCompare(b.name) || a.kind.localeCompare(b.kind))
+        Number(b.kind === 'metadata') - Number(a.kind === 'metadata') || a.name.localeCompare(b.name))
       .slice(0, MAX_SUGGESTIONS)
   }, [normalizedQuery, options, unavailable])
   const activeOption = suggestions[Math.min(activeIndex, suggestions.length - 1)]
@@ -68,7 +68,7 @@ export default function CriteriaPicker({ label, options, selectedKeys, unavailab
             aria-activedescendant={open && activeOption ? `${listId}-${activeOption.key}` : undefined}
             autoComplete="off"
             value={query}
-            placeholder="Type a character or tag"
+            placeholder="Type a name or metadata"
             onChange={(event) => updateQuery(event.target.value)}
             onFocus={() => setOpen(Boolean(normalizedQuery))}
             onBlur={() => window.setTimeout(() => setOpen(false), 100)}
@@ -121,7 +121,7 @@ export default function CriteriaPicker({ label, options, selectedKeys, unavailab
                 </button>
               </li>
             ))}
-            {!suggestions.length && <li className="suggestion-list__empty">No matching characters or tags</li>}
+            {!suggestions.length && <li className="suggestion-list__empty">No matching characters or metadata</li>}
           </ul>
         )}
       </div>
@@ -134,7 +134,7 @@ export default function CriteriaPicker({ label, options, selectedKeys, unavailab
             onClick={() => onChange(selectedKeys.filter((key) => key !== option.key))}
             aria-label={`Remove ${option.kind} ${option.name} from ${label.toLowerCase()}`}
           >
-            <span className="chip__type">{option.kind === 'character' ? 'CHAR' : 'TAG'}</span>
+            <span className="chip__type">{option.kind === 'character' ? 'CHAR' : 'META'}</span>
             <span className="chip__label">{option.name}</span><span className="chip__remove" aria-hidden="true">×</span>
           </button>
         ))}
