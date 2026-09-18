@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 5,
-    "generatedAt": "2026-09-17T16:57:18.614Z",
-    "dataChangedAt": "2026-09-17T16:57:18.614Z",
-    "sourceDataAsOf": "2026-09-17T16:57:18.614Z",
-    "warDataAsOf": "2026-09-17T16:57:18.614Z",
-    "characterDataAsOf": "2026-09-17T16:57:18.614Z",
+    "generatedAt": "2026-09-18T16:21:40.563Z",
+    "dataChangedAt": "2026-09-18T16:21:40.563Z",
+    "sourceDataAsOf": "2026-09-18T16:21:40.563Z",
+    "warDataAsOf": "2026-09-18T16:21:40.563Z",
+    "characterDataAsOf": "2026-09-18T16:21:40.563Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "e2b3e5e51a4b24d04b9f5d0828b7f55fd9d9c11f18ecc4f34c8d172cab816ed6",
+    "contentHash": "9ef213e9df493b0838373f1d5d2947a0a9988dc1cf4b1ab35535deaa5e6ac701",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -548,6 +548,10 @@
         {
           "id": "SPB_05_Alpha",
           "name": "ANXIETY"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -716,6 +720,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -1311,6 +1319,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -1388,7 +1400,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "BlackWidow",
@@ -1442,6 +1459,10 @@
         {
           "id": "BestAvengerBuddies",
           "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         },
         {
           "id": "Golden_Age",
@@ -2065,6 +2086,10 @@
           "name": "COUPLES"
         },
         {
+          "id": "Encore",
+          "name": "ENCORE"
+        },
+        {
           "id": "Golden_Age",
           "name": "GOLDEN AGE"
         }
@@ -2310,7 +2335,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "Carnage",
@@ -3773,6 +3803,10 @@
         {
           "id": "SPB_05_Alpha",
           "name": "ANXIETY"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -4037,7 +4071,12 @@
         }
       ],
       "invisibleTraits": [],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "MultipleManMinion",
@@ -4798,6 +4837,10 @@
         {
           "id": "BestAvengerBuddies",
           "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -5122,7 +5165,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "Ghost",
@@ -5617,6 +5665,10 @@
         {
           "id": "SPB_05_Alpha",
           "name": "ANXIETY"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -6377,6 +6429,10 @@
           "name": "COUPLES"
         },
         {
+          "id": "Encore",
+          "name": "ENCORE"
+        },
+        {
           "id": "SPB_05_Gamma",
           "name": "FEAR"
         }
@@ -6892,6 +6948,10 @@
         {
           "id": "BestAvengerBuddies",
           "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         },
         {
           "id": "SPB_05_Gamma",
@@ -8023,6 +8083,10 @@
         {
           "id": "BestAvengerBuddies",
           "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -8119,6 +8183,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -10106,7 +10174,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "MadelynePryor",
@@ -10513,7 +10586,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "MariaHill",
@@ -12039,7 +12117,12 @@
         }
       ],
       "invisibleTraits": [],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "Negasonic",
@@ -12722,7 +12805,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "OldManLogan",
@@ -14355,6 +14443,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -14493,6 +14585,10 @@
         {
           "id": "SPB_05_Alpha",
           "name": "ANXIETY"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         },
         {
           "id": "KnowhereHeist",
@@ -15340,6 +15436,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -16546,6 +16646,10 @@
           "name": "BEST BUDDIES"
         },
         {
+          "id": "Encore",
+          "name": "ENCORE"
+        },
+        {
           "id": "SPB_05_Gamma",
           "name": "FEAR"
         },
@@ -17183,6 +17287,10 @@
         {
           "id": "AnnihilationWave",
           "name": "CHAPTER 4 - ANNIHILATION WAVE"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         },
         {
           "id": "KnowhereHeist",
@@ -18452,6 +18560,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -18573,6 +18685,10 @@
         {
           "id": "BestAvengerBuddies",
           "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -19438,7 +19554,12 @@
           "name": "Chargeable"
         }
       ],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "VampireProtector",
@@ -19972,6 +20093,10 @@
         {
           "id": "BestAvengerBuddies",
           "name": "BEST AVENGER BUDDIES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -20073,6 +20198,10 @@
         {
           "id": "Couples",
           "name": "COUPLES"
+        },
+        {
+          "id": "Encore",
+          "name": "ENCORE"
         }
       ]
     },
@@ -20364,7 +20493,12 @@
         }
       ],
       "invisibleTraits": [],
-      "eventTraits": []
+      "eventTraits": [
+        {
+          "id": "Encore",
+          "name": "ENCORE"
+        }
+      ]
     },
     {
       "id": "X23",
