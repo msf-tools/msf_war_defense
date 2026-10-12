@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 5,
-    "generatedAt": "2026-10-11T17:40:29.067Z",
-    "dataChangedAt": "2026-10-11T17:40:29.067Z",
-    "sourceDataAsOf": "2026-10-11T17:40:29.067Z",
-    "warDataAsOf": "2026-10-11T17:40:29.067Z",
-    "characterDataAsOf": "2026-10-11T17:40:29.067Z",
+    "generatedAt": "2026-10-12T21:14:55.767Z",
+    "dataChangedAt": "2026-10-12T21:14:55.767Z",
+    "sourceDataAsOf": "2026-10-12T21:14:55.767Z",
+    "warDataAsOf": "2026-10-12T21:14:55.767Z",
+    "characterDataAsOf": "2026-10-12T21:14:55.767Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "ad4ac74ba149f0b7f00f24022a1361e619bf73ce8f6dd17ccfe2516a10dc695d",
+    "contentHash": "b8a6bb530ef3f5214b086c0a2f7856408aeb638decf7da18b298b5c6a81a7e56",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -57382,43 +57382,6 @@
     {
       "characters": [
         {
-          "id": "MagnetoPhoenixForce",
-          "name": "Magneto (Phoenix Force)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagnetoPhoenixForce_a40d4ec9.png",
-          "isMapped": true
-        },
-        {
-          "id": "Mephisto",
-          "name": "Mephisto",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mephisto_9c8a7c7e.png",
-          "isMapped": true
-        },
-        {
-          "id": "Nightcrawler",
-          "name": "Nightcrawler",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Nightcrawler_8fe6d4c5.png",
-          "isMapped": true
-        },
-        {
-          "id": "OmegaRedPhoenix",
-          "name": "Omega Red (Phoenix Force)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OmegaRedPhoenix_f3c258e2.png",
-          "isMapped": true
-        },
-        {
-          "id": "Phoenix",
-          "name": "Phoenix",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Phoenix_d05c646c.png",
-          "isMapped": true
-        }
-      ],
-      "totalBattles": 103,
-      "defensiveWins": 19,
-      "defendRate": 18.4
-    },
-    {
-      "characters": [
-        {
           "id": "Ares",
           "name": "Ares",
           "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Ares_d23d50ad.png",
@@ -57489,6 +57452,43 @@
       "totalBattles": 103,
       "defensiveWins": 12,
       "defendRate": 11.7
+    },
+    {
+      "characters": [
+        {
+          "id": "Azazel",
+          "name": "Azazel",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Azazel_c3414ebf.png",
+          "isMapped": true
+        },
+        {
+          "id": "BaronMordo",
+          "name": "Mordo",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_BaronMordo_01a03f84.png",
+          "isMapped": true
+        },
+        {
+          "id": "Juggernaut",
+          "name": "Juggernaut",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Juggernaut_dd795fa2.png",
+          "isMapped": true
+        },
+        {
+          "id": "Satana",
+          "name": "Satana",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Satana_c988b3c2.png",
+          "isMapped": true
+        },
+        {
+          "id": "TheHood",
+          "name": "The Hood",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_TheHood_dfeee4ba.png",
+          "isMapped": true
+        }
+      ],
+      "totalBattles": 103,
+      "defensiveWins": 3,
+      "defendRate": 2.9
     },
     {
       "characters": [
