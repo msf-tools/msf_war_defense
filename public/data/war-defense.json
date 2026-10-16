@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 5,
-    "generatedAt": "2026-10-15T16:56:23.874Z",
-    "dataChangedAt": "2026-10-15T16:56:23.874Z",
-    "sourceDataAsOf": "2026-10-15T16:56:23.874Z",
-    "warDataAsOf": "2026-10-15T16:56:23.874Z",
-    "characterDataAsOf": "2026-10-15T16:56:23.874Z",
+    "generatedAt": "2026-10-16T16:34:46.659Z",
+    "dataChangedAt": "2026-10-16T16:34:46.659Z",
+    "sourceDataAsOf": "2026-10-16T16:34:46.659Z",
+    "warDataAsOf": "2026-10-16T16:34:46.659Z",
+    "characterDataAsOf": "2026-10-16T16:34:46.659Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "d9469b2a8285d79c6e1d3a23e7ee24769ee217069f2d79dd4d4df0093abd4b29",
+    "contentHash": "fc710427c42547453c31dd4c1784e67255c0d79d43a64716a4d84db015d47d8c",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -1634,7 +1634,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger2",
@@ -2770,7 +2770,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger3",
@@ -3214,7 +3214,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -4349,7 +4349,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "MSFOriginal",
@@ -5514,7 +5514,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger2",
@@ -6565,7 +6565,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -7014,7 +7014,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -7830,7 +7830,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger2",
@@ -8534,7 +8534,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger3",
@@ -8886,7 +8886,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -9086,7 +9086,7 @@
       "eventTraits": [
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SPB_05_Beta",
@@ -9518,7 +9518,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger2",
@@ -9678,7 +9678,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -10085,7 +10085,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SPB_05_Beta",
@@ -11738,7 +11738,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -12793,7 +12793,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -13916,7 +13916,7 @@
       "eventTraits": [
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SPB_05_Omega",
@@ -16097,7 +16097,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SPB_05_Omega",
@@ -16378,7 +16378,7 @@
       "eventTraits": [
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SPB_05_Omega",
@@ -16441,7 +16441,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger2",
@@ -16982,7 +16982,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -17082,7 +17082,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -18098,7 +18098,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "SentryChallengers",
@@ -18836,7 +18836,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -19094,7 +19094,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger2",
@@ -19479,7 +19479,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -20059,7 +20059,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger3",
@@ -20817,7 +20817,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -20973,7 +20973,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         }
       ]
     },
@@ -21015,7 +21015,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger3",
@@ -21375,7 +21375,7 @@
         },
         {
           "id": "MaestroChallengers",
-          "name": "Maestro Challengers"
+          "name": "MAESTRO CHALLENGERS"
         },
         {
           "id": "TowerChallenger3",
