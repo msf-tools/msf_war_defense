@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 5,
-    "generatedAt": "2026-10-25T16:10:58.141Z",
-    "dataChangedAt": "2026-10-25T16:10:58.141Z",
-    "sourceDataAsOf": "2026-10-25T16:10:58.141Z",
-    "warDataAsOf": "2026-10-25T16:10:58.141Z",
-    "characterDataAsOf": "2026-10-25T16:10:58.141Z",
+    "generatedAt": "2026-10-27T17:57:55.993Z",
+    "dataChangedAt": "2026-10-27T17:57:55.993Z",
+    "sourceDataAsOf": "2026-10-27T17:57:55.993Z",
+    "warDataAsOf": "2026-10-27T17:57:55.993Z",
+    "characterDataAsOf": "2026-10-27T17:57:55.993Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "8d5844cd90456f498dcd76f8bbfb4ad251f167a706b263f16899f7856d92eb72",
+    "contentHash": "1078fdeccc706ed68c863c38015196ad27d93d27450a82aab956f20e23e4e9ed",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -57534,6 +57534,43 @@
     {
       "characters": [
         {
+          "id": "DoctorOctopus",
+          "name": "Doctor Octopus",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_DoctorOctopus_f5723b4f.png",
+          "isMapped": true
+        },
+        {
+          "id": "Electro",
+          "name": "Electro",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Electro_0e25d443.png",
+          "isMapped": true
+        },
+        {
+          "id": "GreenGoblinGlider",
+          "name": "Green Goblin (Classic)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_GreenGoblinGlider_d34c3dcd.png",
+          "isMapped": true
+        },
+        {
+          "id": "Lizard",
+          "name": "Lizard",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Lizard_573d00b9.png",
+          "isMapped": true
+        },
+        {
+          "id": "Mysterio",
+          "name": "Mysterio",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mysterio_ab8220b7.png",
+          "isMapped": true
+        }
+      ],
+      "totalBattles": 100,
+      "defensiveWins": 16,
+      "defendRate": 16
+    },
+    {
+      "characters": [
+        {
           "id": "MagnetoPhoenixForce",
           "name": "Magneto (Phoenix Force)",
           "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagnetoPhoenixForce_a40d4ec9.png",
@@ -57571,43 +57608,6 @@
     {
       "characters": [
         {
-          "id": "Daken",
-          "name": "Daken",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Daken_fad050d8.png",
-          "isMapped": true
-        },
-        {
-          "id": "MagnetoPhoenixForce",
-          "name": "Magneto (Phoenix Force)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagnetoPhoenixForce_a40d4ec9.png",
-          "isMapped": true
-        },
-        {
-          "id": "OldManLogan",
-          "name": "Old Man Logan",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OldManLogan_d9559148.png",
-          "isMapped": true
-        },
-        {
-          "id": "OmegaRedPhoenix",
-          "name": "Omega Red (Phoenix Force)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OmegaRedPhoenix_f3c258e2.png",
-          "isMapped": true
-        },
-        {
-          "id": "Phoenix",
-          "name": "Phoenix",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Phoenix_d05c646c.png",
-          "isMapped": true
-        }
-      ],
-      "totalBattles": 100,
-      "defensiveWins": 10,
-      "defendRate": 10
-    },
-    {
-      "characters": [
-        {
           "id": "Abomination",
           "name": "Abomination",
           "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Abomination_d466494d.png",
@@ -57635,6 +57635,43 @@
       "totalBattles": 100,
       "defensiveWins": 7,
       "defendRate": 7
+    },
+    {
+      "characters": [
+        {
+          "id": "DoctorOctopus",
+          "name": "Doctor Octopus",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_DoctorOctopus_f5723b4f.png",
+          "isMapped": true
+        },
+        {
+          "id": "KravenTheHunter",
+          "name": "Kraven the Hunter",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KravenTheHunter_ed036dee.png",
+          "isMapped": true
+        },
+        {
+          "id": "Mysterio",
+          "name": "Mysterio",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mysterio_ab8220b7.png",
+          "isMapped": true
+        },
+        {
+          "id": "SpiderSlayer",
+          "name": "Spider-Slayer",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderSlayer_affec33a.png",
+          "isMapped": true
+        },
+        {
+          "id": "Vulture",
+          "name": "Vulture",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Vulture_1b9aa113.png",
+          "isMapped": true
+        }
+      ],
+      "totalBattles": 100,
+      "defensiveWins": 5,
+      "defendRate": 5
     },
     {
       "characters": [
@@ -57703,43 +57740,6 @@
       "totalBattles": 100,
       "defensiveWins": 3,
       "defendRate": 3
-    },
-    {
-      "characters": [
-        {
-          "id": "GhostSpider",
-          "name": "Ghost-Spider",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_GhostSpider_f7a4fac2.png",
-          "isMapped": true
-        },
-        {
-          "id": "PeterBParker",
-          "name": "Peter B. Parker",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_PeterBParker_0a7774ae.png",
-          "isMapped": true
-        },
-        {
-          "id": "SpiderManNoir",
-          "name": "Spider-Man (Noir)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderManNoir_784aae26.png",
-          "isMapped": true
-        },
-        {
-          "id": "SpiderManPavitr",
-          "name": "Spider-Man (Pavitr)",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderManPavitr_f4510bf7.png",
-          "isMapped": true
-        },
-        {
-          "id": "SpiderWeaver",
-          "name": "Spider-Weaver",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_SpiderWeaver_b040589a.png",
-          "isMapped": true
-        }
-      ],
-      "totalBattles": 100,
-      "defensiveWins": 1,
-      "defendRate": 1
     }
   ]
 }
