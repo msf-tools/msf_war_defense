@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 5,
-    "generatedAt": "2026-10-30T17:59:12.992Z",
-    "dataChangedAt": "2026-10-30T17:59:12.992Z",
-    "sourceDataAsOf": "2026-10-30T17:59:12.992Z",
-    "warDataAsOf": "2026-10-30T17:59:12.992Z",
-    "characterDataAsOf": "2026-10-30T17:59:12.992Z",
+    "generatedAt": "2026-10-31T17:14:10.646Z",
+    "dataChangedAt": "2026-10-31T17:14:10.646Z",
+    "sourceDataAsOf": "2026-10-31T17:14:10.646Z",
+    "warDataAsOf": "2026-10-31T17:14:10.646Z",
+    "characterDataAsOf": "2026-10-31T17:14:10.646Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "432e76b529f00827155d75164f4dc69bc7a6acad120212bf5799e0089fd53ba0",
+    "contentHash": "9363a13ecf296b2f63f2a47a00ca8f277de234419e7ec22d5728f2aeae8630a1",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -15845,6 +15845,10 @@
         {
           "id": "Global",
           "name": "GLOBAL"
+        },
+        {
+          "id": "Legendary",
+          "name": "LEGENDARY"
         },
         {
           "id": "Menace",
