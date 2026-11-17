@@ -1,11 +1,11 @@
 {
   "meta": {
     "schemaVersion": 5,
-    "generatedAt": "2026-11-16T21:57:27.565Z",
-    "dataChangedAt": "2026-11-16T21:57:27.565Z",
-    "sourceDataAsOf": "2026-11-16T21:57:27.565Z",
-    "warDataAsOf": "2026-11-16T21:57:27.565Z",
-    "characterDataAsOf": "2026-11-16T21:57:27.565Z",
+    "generatedAt": "2026-11-17T20:51:05.546Z",
+    "dataChangedAt": "2026-11-17T20:51:05.546Z",
+    "sourceDataAsOf": "2026-11-17T20:51:05.546Z",
+    "warDataAsOf": "2026-11-17T20:51:05.546Z",
+    "characterDataAsOf": "2026-11-17T20:51:05.546Z",
     "characterOverrideCount": 0,
     "characterOverrideDataAsOf": null,
     "squadCount": 1000,
@@ -13,7 +13,7 @@
     "unmappedCharacterCount": 0,
     "duplicateRecordCount": 0,
     "portraitCoverage": 1,
-    "contentHash": "f299521704d9f744b94191f66529dab19f0d23339592f08fefa46c57823432a7",
+    "contentHash": "5e87a6346cdecd3848cdb72f2928f13d5854780b6cb9d7150dd7487e53a6faa1",
     "sources": {
       "characters": {
         "id": "official-msf-character-api",
@@ -1624,6 +1624,10 @@
         {
           "id": "Support",
           "name": "SUPPORT"
+        },
+        {
+          "id": "Vampire",
+          "name": "VAMPIRE"
         }
       ],
       "invisibleTraits": [
@@ -58175,39 +58179,39 @@
     {
       "characters": [
         {
-          "id": "Apocalypse",
-          "name": "Apocalypse",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Apocalypse_a29770e5.png",
+          "id": "Ares",
+          "name": "Ares",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Ares_d23d50ad.png",
           "isMapped": true
         },
         {
-          "id": "IronPatriot",
-          "name": "Iron Patriot",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_IronPatriot_0b6c142a.png",
+          "id": "MagnetoPhoenixForce",
+          "name": "Magneto (Phoenix Force)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_MagnetoPhoenixForce_a40d4ec9.png",
           "isMapped": true
         },
         {
-          "id": "KangTheConqueror",
-          "name": "Kang the Conqueror",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_KangTheConqueror_411ede1a.png",
+          "id": "Mephisto",
+          "name": "Mephisto",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Mephisto_9c8a7c7e.png",
           "isMapped": true
         },
         {
-          "id": "Namor",
-          "name": "Namor",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Namor_b4f49d32.png",
+          "id": "OmegaRedPhoenix",
+          "name": "Omega Red (Phoenix Force)",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_OmegaRedPhoenix_f3c258e2.png",
           "isMapped": true
         },
         {
-          "id": "TheLeader",
-          "name": "The Leader",
-          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_TheLeader_ccdd254e.png",
+          "id": "Phoenix",
+          "name": "Phoenix",
+          "portrait": "https://assets.marvelstrikeforce.com/imgs/Portrait_Phoenix_d05c646c.png",
           "isMapped": true
         }
       ],
       "totalBattles": 91,
-      "defensiveWins": 11,
-      "defendRate": 12.1
+      "defensiveWins": 17,
+      "defendRate": 18.7
     }
   ]
 }
